@@ -1,0 +1,22 @@
+datasources:80d08104ccfe4a9aaa962f0da634dbbe7fac5127
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:aad4a7482879abcbeb5c805ff0d030d6dd246dc4
+--suite TestSuites.TS1 SIGNIN
+--suite TestSuites.TS10 GSTN INFO
+--suite TestSuites.TS11 EPFO
+--suite TestSuites.TS12 NEWS
+--suite TestSuites.TS2 HIGHLIGHTS
+--suite TestSuites.TS3 REGISTRATIONS
+--suite TestSuites.TS4 RELATIONSHIPS
+--suite TestSuites.TS5 FINANCIALS
+--suite TestSuites.TS6 CHARGES
+--suite TestSuites.TS7 LEGAL
+--suite TestSuites.TS8 TIMELINES
+--suite TestSuites.TS9 BLACKLISTS
+--suite TestSuites.TS13 Ratings
+--suite TestSuites.TS14 Alerts
+--suite TestSuites.TS15 Cases
+--suite TestSuites.TS16 ManualCases
+--suite TestSuites.TS17 PARTIES
+--suite TestSuites.TS18 PORTFOLIOS

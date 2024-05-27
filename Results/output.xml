@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-24T17:56:11.557292" rpa="false" schemaversion="5">
+<suite id="s1" name="TS15 Cases" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS15_Cases">
+<suite id="s1-s1" name="TS15 Cases" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS15_Cases\TS15_Cases.robot">
+<test id="s1-s1-t1" name="Verify Cases page" line="11">
+<kw name="Login to the application and search customer name" owner="GenralKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:56:12.096322" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-24T17:56:12.096322" elapsed="22.117994"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2024-05-24T18:01:34.922466" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-24T18:01:34.923668" level="FAIL">TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=124.0.6367.210)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60E681502+60802]
+	(No symbol) [0x00007FF60E5FAC02]
+	(No symbol) [0x00007FF60E4B7CE4]
+	(No symbol) [0x00007FF60E4A0FE1]
+	(No symbol) [0x00007FF60E4A0D42]
+	(No symbol) [0x00007FF60E49EBE4]
+	(No symbol) [0x00007FF60E49F3FF]
+	(No symbol) [0x00007FF60E4AE0F8]
+	(No symbol) [0x00007FF60E4C57CF]
+	(No symbol) [0x00007FF60E4CB38A]
+	(No symbol) [0x00007FF60E49FB85]
+	(No symbol) [0x00007FF60E4C550E]
+	(No symbol) [0x00007FF60E54A582]
+	(No symbol) [0x00007FF60E52A923]
+	(No symbol) [0x00007FF60E4F8FEC]
+	(No symbol) [0x00007FF60E4F9C21]
+	GetHandleVerifier [0x00007FF60E98411D+3217821]
+	GetHandleVerifier [0x00007FF60E9C60B7+3488055]
+	GetHandleVerifier [0x00007FF60E9BF03F+3459263]
+	GetHandleVerifier [0x00007FF60E73B846+823494]
+	(No symbol) [0x00007FF60E605F9F]
+	(No symbol) [0x00007FF60E600EC4]
+	(No symbol) [0x00007FF60E601052]
+	(No symbol) [0x00007FF60E5F18A4]
+	BaseThreadInitThunk [0x00007FFCB8C0257D+29]
+	RtlUserThreadStart [0x00007FFCBA3EAA48+40]
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2024-05-24T17:56:34.215323" elapsed="300.718128">TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=124.0.6367.210)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60E681502+60802]
+	(No symbol) [0x00007FF60E5FAC02]
+	(No symbol) [0x00007FF60E4B7CE4]
+	(No symbol) [0x00007FF60E4A0FE1]
+	(No symbol) [0x00007FF60E4A0D42]
+	(No symbol) [0x00007FF60E49EBE4]
+	(No symbol) [0x00007FF60E49F3FF]
+	(No symbol) [0x00007FF60E4AE0F8]
+	(No symbol) [0x00007FF60E4C57CF]
+	(No symbol) [0x00007FF60E4CB38A]
+	(No symbol) [0x00007FF60E49FB85]
+	(No symbol) [0x00007FF60E4C550E]
+	(No symbol) [0x00007FF60E54A582]
+	(No symbol) [0x00007FF60E52A923]
+	(No symbol) [0x00007FF60E4F8FEC]
+	(No symbol) [0x00007FF60E4F9C21]
+	GetHandleVerifier [0x00007FF60E98411D+3217821]
+	GetHandleVerifier [0x00007FF60E9C60B7+3488055]
+	GetHandleVerifier [0x00007FF60E9BF03F+3459263]
+	GetHandleVerifier [0x00007FF60E73B846+823494]
+	(No symbol) [0x00007FF60E605F9F]
+	(No symbol) [0x00007FF60E600EC4]
+	(No symbol) [0x00007FF60E601052]
+	(No symbol) [0x00007FF60E5F18A4]
+	BaseThreadInitThunk [0x00007FFCB8C0257D+29]
+	RtlUserThreadStart [0x00007FFCBA3EAA48+40]
+</status>
+</kw>
+<kw name="Click Login Button" owner="GenralKeywords">
+<doc>Clicks on the login button</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.933603" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.934904" elapsed="0.000000"/>
+</kw>
+<kw name="SignIn to the Application" owner="GenralKeywords">
+<arg>credibot@ktkbank.com</arg>
+<arg>Credi!123</arg>
+<doc>Signs in using provided username and password</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.934904" elapsed="0.000000"/>
+</kw>
+<kw name="Click Signin Button" owner="GenralKeywords">
+<doc>Clicks on the signin button</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.935938" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4S</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.936174" elapsed="0.000000"/>
+</kw>
+<kw name="Click Search Bar" owner="GenralKeywords">
+<doc>Clicks on the search bar</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.936174" elapsed="0.000000"/>
+</kw>
+<kw name="Read Customer Name From CSV" owner="GenralKeywords">
+<var>${customer_name}</var>
+<doc>Reads customer name from CSV file</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.937287" elapsed="0.000198"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SEARCH BAR}</arg>
+<arg>${customer_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.937485" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCHED ITEM}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.937485" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.938632" elapsed="0.000000"/>
+</kw>
+<kw name="Click on Searched Customer name in search list" owner="GenralKeywords">
+<doc>Click on Searched Customer name in search list</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.938876" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.939904" elapsed="0.000000"/>
+</kw>
+<doc>Login to the application and search customer name</doc>
+<status status="FAIL" start="2024-05-24T17:56:12.092798" elapsed="322.847430">TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=124.0.6367.210)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60E681502+60802]
+	(No symbol) [0x00007FF60E5FAC02]
+	(No symbol) [0x00007FF60E4B7CE4]
+	(No symbol) [0x00007FF60E4A0FE1]
+	(No symbol) [0x00007FF60E4A0D42]
+	(No symbol) [0x00007FF60E49EBE4]
+	(No symbol) [0x00007FF60E49F3FF]
+	(No symbol) [0x00007FF60E4AE0F8]
+	(No symbol) [0x00007FF60E4C57CF]
+	(No symbol) [0x00007FF60E4CB38A]
+	(No symbol) [0x00007FF60E49FB85]
+	(No symbol) [0x00007FF60E4C550E]
+	(No symbol) [0x00007FF60E54A582]
+	(No symbol) [0x00007FF60E52A923]
+	(No symbol) [0x00007FF60E4F8FEC]
+	(No symbol) [0x00007FF60E4F9C21]
+	GetHandleVerifier [0x00007FF60E98411D+3217821]
+	GetHandleVerifier [0x00007FF60E9C60B7+3488055]
+	GetHandleVerifier [0x00007FF60E9BF03F+3459263]
+	GetHandleVerifier [0x00007FF60E73B846+823494]
+	(No symbol) [0x00007FF60E605F9F]
+	(No symbol) [0x00007FF60E600EC4]
+	(No symbol) [0x00007FF60E601052]
+	(No symbol) [0x00007FF60E5F18A4]
+	BaseThreadInitThunk [0x00007FFCB8C0257D+29]
+	RtlUserThreadStart [0x00007FFCBA3EAA48+40]
+</status>
+</kw>
+<kw name="Click on Cases" owner="CasesPage">
+<doc>Click on Cases</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.941553" elapsed="0.001004"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<arg>cases</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:34.943259" elapsed="0.001542"/>
+</kw>
+<doc>TC-1 Test Cases page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-05-24T17:56:12.089987" elapsed="322.855587">TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=124.0.6367.210)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60E681502+60802]
+	(No symbol) [0x00007FF60E5FAC02]
+	(No symbol) [0x00007FF60E4B7CE4]
+	(No symbol) [0x00007FF60E4A0FE1]
+	(No symbol) [0x00007FF60E4A0D42]
+	(No symbol) [0x00007FF60E49EBE4]
+	(No symbol) [0x00007FF60E49F3FF]
+	(No symbol) [0x00007FF60E4AE0F8]
+	(No symbol) [0x00007FF60E4C57CF]
+	(No symbol) [0x00007FF60E4CB38A]
+	(No symbol) [0x00007FF60E49FB85]
+	(No symbol) [0x00007FF60E4C550E]
+	(No symbol) [0x00007FF60E54A582]
+	(No symbol) [0x00007FF60E52A923]
+	(No symbol) [0x00007FF60E4F8FEC]
+	(No symbol) [0x00007FF60E4F9C21]
+	GetHandleVerifier [0x00007FF60E98411D+3217821]
+	GetHandleVerifier [0x00007FF60E9C60B7+3488055]
+	GetHandleVerifier [0x00007FF60E9BF03F+3459263]
+	GetHandleVerifier [0x00007FF60E73B846+823494]
+	(No symbol) [0x00007FF60E605F9F]
+	(No symbol) [0x00007FF60E600EC4]
+	(No symbol) [0x00007FF60E601052]
+	(No symbol) [0x00007FF60E5F18A4]
+	BaseThreadInitThunk [0x00007FFCB8C0257D+29]
+	RtlUserThreadStart [0x00007FFCBA3EAA48+40]
+</status>
+</test>
+<status status="FAIL" start="2024-05-24T17:56:11.637811" elapsed="323.316474"/>
+</suite>
+<suite id="s1-s2" name="TS16 ManualCases" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS15_Cases\TS16_ManualCases.robot">
+<test id="s1-s2-t1" name="Verify Export button" line="11">
+<kw name="Open Browser and Login" owner="GenralKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-24T18:01:35.030577" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<msg time="2024-05-24T18:01:40.823845" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-24T18:01:40.823845" level="FAIL">WebDriverException: Message: no such execution context
+  (Session info: chrome=124.0.6367.210)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60E681502+60802]
+	(No symbol) [0x00007FF60E5FAC02]
+	(No symbol) [0x00007FF60E4B7B13]
+	(No symbol) [0x00007FF60E4A05E0]
+	(No symbol) [0x00007FF60E49EC3D]
+	(No symbol) [0x00007FF60E49F3FF]
+	(No symbol) [0x00007FF60E4AE97E]
+	(No symbol) [0x00007FF60E4C57CF]
+	(No symbol) [0x00007FF60E4CB38A]
+	(No symbol) [0x00007FF60E49FB85]
+	(No symbol) [0x00007FF60E4C53AE]
+	(No symbol) [0x00007FF60E54A0FF]
+	(No symbol) [0x00007FF60E52A923]
+	(No symbol) [0x00007FF60E4F8FEC]
+	(No symbol) [0x00007FF60E4F9C21]
+	GetHandleVerifier [0x00007FF60E98411D+3217821]
+	GetHandleVerifier [0x00007FF60E9C60B7+3488055]
+	GetHandleVerifier [0x00007FF60E9BF03F+3459263]
+	GetHandleVerifier [0x00007FF60E73B846+823494]
+	(No symbol) [0x00007FF60E605F9F]
+	(No symbol) [0x00007FF60E600EC4]
+	(No symbol) [0x00007FF60E601052]
+	(No symbol) [0x00007FF60E5F18A4]
+	BaseThreadInitThunk [0x00007FFCB8C0257D+29]
+	RtlUserThreadStart [0x00007FFCBA3EAA48+40]
+</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-05-24T18:01:35.029211" elapsed="5.799425">WebDriverException: Message: no such execution context
+  (Session info: chrome=124.0.6367.210)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60E681502+60802]
+	(No symbol) [0x00007FF60E5FAC02]
+	(No symbol) [0x00007FF60E4B7B13]
+	(No symbol) [0x00007FF60E4A05E0]
+	(No symbol) [0x00007FF60E49EC3D]
+	(No symbol) [0x00007FF60E49F3FF]
+	(No symbol) [0x00007FF60E4AE97E]
+	(No symbol) [0x00007FF60E4C57CF]
+	(No symbol) [0x00007FF60E4CB38A]
+	(No symbol) [0x00007FF60E49FB85]
+	(No symbol) [0x00007FF60E4C53AE]
+	(No symbol) [0x00007FF60E54A0FF]
+	(No symbol) [0x00007FF60E52A923]
+	(No symbol) [0x00007FF60E4F8FEC]
+	(No symbol) [0x00007FF60E4F9C21]
+	GetHandleVerifier [0x00007FF60E98411D+3217821]
+	GetHandleVerifier [0x00007FF60E9C60B7+3488055]
+	GetHandleVerifier [0x00007FF60E9BF03F+3459263]
+	GetHandleVerifier [0x00007FF60E73B846+823494]
+	(No symbol) [0x00007FF60E605F9F]
+	(No symbol) [0x00007FF60E600EC4]
+	(No symbol) [0x00007FF60E601052]
+	(No symbol) [0x00007FF60E5F18A4]
+	BaseThreadInitThunk [0x00007FFCB8C0257D+29]
+	RtlUserThreadStart [0x00007FFCBA3EAA48+40]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:40.829636" elapsed="0.000000"/>
+</kw>
+<kw name="Click Login Button" owner="GenralKeywords">
+<doc>Clicks on the login button</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:40.830636" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:40.830636" elapsed="0.000000"/>
+</kw>
+<kw name="SignIn to the Application" owner="GenralKeywords">
+<arg>credibot@ktkbank.com</arg>
+<arg>Credi!123</arg>
+<doc>Signs in using provided username and password</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:40.831657" elapsed="0.000000"/>
+</kw>
+<kw name="Click Signin Button" owner="GenralKeywords">
+<doc>Clicks on the signin button</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:40.831657" elapsed="0.000997"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4S</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:40.832654" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-24T18:01:35.028073" elapsed="5.805563">WebDriverException: Message: no such execution context
+  (Session info: chrome=124.0.6367.210)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60E681502+60802]
+	(No symbol) [0x00007FF60E5FAC02]
+	(No symbol) [0x00007FF60E4B7B13]
+	(No symbol) [0x00007FF60E4A05E0]
+	(No symbol) [0x00007FF60E49EC3D]
+	(No symbol) [0x00007FF60E49F3FF]
+	(No symbol) [0x00007FF60E4AE97E]
+	(No symbol) [0x00007FF60E4C57CF]
+	(No symbol) [0x00007FF60E4CB38A]
+	(No symbol) [0x00007FF60E49FB85]
+	(No symbol) [0x00007FF60E4C53AE]
+	(No symbol) [0x00007FF60E54A0FF]
+	(No symbol) [0x00007FF60E52A923]
+	(No symbol) [0x00007FF60E4F8FEC]
+	(No symbol) [0x00007FF60E4F9C21]
+	GetHandleVerifier [0x00007FF60E98411D+3217821]
+	GetHandleVerifier [0x00007FF60E9C60B7+3488055]
+	GetHandleVerifier [0x00007FF60E9BF03F+3459263]
+	GetHandleVerifier [0x00007FF60E73B846+823494]
+	(No symbol) [0x00007FF60E605F9F]
+	(No symbol) [0x00007FF60E600EC4]
+	(No symbol) [0x00007FF60E601052]
+	(No symbol) [0x00007FF60E5F18A4]
+	BaseThreadInitThunk [0x00007FFCB8C0257D+29]
+	RtlUserThreadStart [0x00007FFCBA3EAA48+40]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:40.840128" elapsed="0.000000"/>
+</kw>
+<kw name="Click on Cases on LHS in features list of dashboard" owner="CasesPage">
+<doc>Click on Cases on LHS in features list of dashboard</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:40.852839" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-24T18:01:40.853976" elapsed="0.000000"/>
+</kw>
+<kw name="Click on Export button" owner="CasesPage">
+<status status="NOT RUN" start="2024-05-24T18:01:40.871697" elapsed="0.000000"/>
+</kw>
+<doc>TC-1 Test Export feature</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-05-24T18:01:35.026693" elapsed="5.847008">WebDriverException: Message: no such execution context
+  (Session info: chrome=124.0.6367.210)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60E681502+60802]
+	(No symbol) [0x00007FF60E5FAC02]
+	(No symbol) [0x00007FF60E4B7B13]
+	(No symbol) [0x00007FF60E4A05E0]
+	(No symbol) [0x00007FF60E49EC3D]
+	(No symbol) [0x00007FF60E49F3FF]
+	(No symbol) [0x00007FF60E4AE97E]
+	(No symbol) [0x00007FF60E4C57CF]
+	(No symbol) [0x00007FF60E4CB38A]
+	(No symbol) [0x00007FF60E49FB85]
+	(No symbol) [0x00007FF60E4C53AE]
+	(No symbol) [0x00007FF60E54A0FF]
+	(No symbol) [0x00007FF60E52A923]
+	(No symbol) [0x00007FF60E4F8FEC]
+	(No symbol) [0x00007FF60E4F9C21]
+	GetHandleVerifier [0x00007FF60E98411D+3217821]
+	GetHandleVerifier [0x00007FF60E9C60B7+3488055]
+	GetHandleVerifier [0x00007FF60E9BF03F+3459263]
+	GetHandleVerifier [0x00007FF60E73B846+823494]
+	(No symbol) [0x00007FF60E605F9F]
+	(No symbol) [0x00007FF60E600EC4]
+	(No symbol) [0x00007FF60E601052]
+	(No symbol) [0x00007FF60E5F18A4]
+	BaseThreadInitThunk [0x00007FFCB8C0257D+29]
+	RtlUserThreadStart [0x00007FFCBA3EAA48+40]
+</status>
+</test>
+<test id="s1-s2-t2" name="Verify if user can edit the case" line="45">
+<kw name="Click on edit button" owner="CasesPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-24T18:01:40.903457" level="INFO">Clicking button '//button[text()='Edit']'.</msg>
+<msg time="2024-05-24T18:01:41.235913" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-24T18:01:41.236945" level="FAIL">Button with locator '//button[text()='Edit']' not found.</msg>
+<arg>${EditCase}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-24T18:01:40.902424" elapsed="0.338113">Button with locator '//button[text()='Edit']' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-24T18:01:40.901321" elapsed="0.339216">Button with locator '//button[text()='Edit']' not found.</status>
+</kw>
+<kw name="Clear old case description" owner="CasesPage">
+<status status="NOT RUN" start="2024-05-24T18:01:41.244833" elapsed="0.000000"/>
+</kw>
+<kw name="Enter new case description" owner="CasesPage">
+<status status="NOT RUN" start="2024-05-24T18:01:41.251963" elapsed="0.000000"/>
+</kw>
+<doc>TC-4 Test if users can edit the case</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-05-24T18:01:40.893714" elapsed="0.359497">Button with locator '//button[text()='Edit']' not found.</status>
+</test>
+<status status="FAIL" start="2024-05-24T18:01:34.956686" elapsed="6.298901"/>
+</suite>
+<status status="FAIL" start="2024-05-24T17:56:11.562008" elapsed="329.696026"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="3" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="TS15 Cases">TS15 Cases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TS15 Cases">TS15 Cases.TS15 Cases</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s2" name="TS16 ManualCases">TS15 Cases.TS16 ManualCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
