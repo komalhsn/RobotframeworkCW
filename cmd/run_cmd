@@ -1,6 +1,6 @@
 cmd to run testsuite: robot --outputdir results --log log.txt --report report.html --variable ENV:QA TestSuites
 cmd to run testcase: robot --outputdir results --log log.txt --report report.html --variable ENV:QA TestSuites/TS1_SIGNIN.robot
-cmd to in parallel: pabot --outputdir Results TestSuites.robot
+cmd to in parallel: pabot --outputdir Results TestSuites
 cmd to run only failed testcases: robot --outputdir results --log log.txt --report report.html --variable ENV:QA --rerunfailed Results/output.xml TestSuites
 cmd to run in particular browser:robot --variable BROWSER:Chrome --outputdir Results TestSuites/TS10_GSTN_INFO.robot
 

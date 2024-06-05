@@ -1,0 +1,33 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS8 Timelines                                                      
+==============================================================================
+TestSuites.TS8 Timelines.TC8 TIMELINES                                        
+==============================================================================
+Verifying Timelines page :: TC-1 Test the Timelines page                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS8_Timelines\TC8_TIMELINES.robot:11
+    T:  Verifying Timelines page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS8_Timelines\TC8_TIMELINES.robot:14
+      Login to the application and search customer name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\CommonKeywords\GenralKeywords.robot:107
+      Wait Until Element Is Visible    ${SEARCHED ITEM}
+      |  ${SEARCHED ITEM} = (//div[@class='d-flex align-items-center'])[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+TestSuites.TS8 Timelines.TC8 TIMELINES                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestSuites.TS8 Timelines                                              | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\17\output.xml

@@ -1,0 +1,97 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS5 Financials                                                     
+==============================================================================
+TestSuites.TS5 Financials.TC5 FINANCIALS                                      
+==============================================================================
+Verifying Profit and Loss in Financials page :: TC-1 Test the Prof...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS5_Financials\TC5_FINANCIALS.robot:12
+    T:  Verifying Profit and Loss in Financials page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS5_Financials\TC5_FINANCIALS.robot:16
+      Click Financials Link    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\FinancialsPage.robot:22
+      Click Link    ${Financials LINK}
+      |  ${Financials LINK} = //a[text()='Financials'] (str)
+______________________________________________________________________________
+| FAIL |
+Link with locator '//a[text()='Financials']' not found.
+------------------------------------------------------------------------------
+Verifying Balance Sheet in Financials page :: TC-2 Test the Balanc...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS5_Financials\TC5_FINANCIALS.robot:23
+    T:  Verifying Balance Sheet in Financials page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS5_Financials\TC5_FINANCIALS.robot:26
+      Click on Balancesheet Tab    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\FinancialsPage.robot:31
+      Click Element    ${balancesheet}
+      |  ${balancesheet} = //div[contains(text(),'Balance Sheet')] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//div[contains(text(),'Balance Sheet')]' not found.
+------------------------------------------------------------------------------
+Verify Ratios in Financials Page :: TC-3 Test the Ratios in Financ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS5_Financials\TC5_FINANCIALS.robot:31
+    T:  Verify Ratios in Financials Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS5_Financials\TC5_FINANCIALS.robot:34
+      Click on Ratios Tab    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\FinancialsPage.robot:41
+      Click Element    ${Ratios}
+      |  ${Ratios} = //div[contains(text(),'Ratios')] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//div[contains(text(),'Ratios')]' not found.
+------------------------------------------------------------------------------
+Verify Standalone Quarterly in Financials Page :: TC-4 Test the St...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS5_Financials\TC5_FINANCIALS.robot:39
+    T:  Verify Standalone Quarterly in Financials Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS5_Financials\TC5_FINANCIALS.robot:42
+      Click on Quarterly Tab    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\FinancialsPage.robot:55
+      Click Element    ${Quarterly}
+      |  ${Quarterly} = //div[contains(text(),'Quarterly')] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//div[contains(text(),'Quarterly')]' not found.
+------------------------------------------------------------------------------
+Verify Consolidated Quarterly in Financials Page :: TC-5 Test the ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS5_Financials\TC5_FINANCIALS.robot:46
+    T:  Verify Consolidated Quarterly in Financials Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS5_Financials\TC5_FINANCIALS.robot:49
+      Click on Consolidated Button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\FinancialsPage.robot:64
+      Click Button    ${ConsolidatedButton}
+      |  ${ConsolidatedButton} = //button[contains(text(),'Consolidated')] (str)
+______________________________________________________________________________
+| FAIL |
+Button with locator '//button[contains(text(),'Consolidated')]' not found.
+------------------------------------------------------------------------------
+TestSuites.TS5 Financials.TC5 FINANCIALS                              | FAIL |
+5 tests, 0 passed, 5 failed
+==============================================================================
+TestSuites.TS5 Financials                                             | FAIL |
+5 tests, 0 passed, 5 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+5 tests, 0 passed, 5 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\14\output.xml

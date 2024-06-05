@@ -1,0 +1,116 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS4 Relationships                                                  
+==============================================================================
+TestSuites.TS4 Relationships.TC4 RELATIONSHIPS                                
+==============================================================================
+Verifying Signatories in Relationships page :: TC-1 Test the Signa...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:14
+    T:  Verifying Signatories in Relationships page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:17
+      Login to the application and search customer name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\CommonKeywords\GenralKeywords.robot:109
+      Click on Searched Customer name in search list    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\CommonKeywords\GenralKeywords.robot:56
+      Click Element    ${SEARCHED ITEM}
+      |  ${SEARCHED ITEM} = (//div[@class='d-flex align-items-center'])[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '(//div[@class='d-flex align-items-center'])[1]' not found.
+------------------------------------------------------------------------------
+Verifying Auditors in Relationships page :: TC-2 Test Auditors in ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:28
+    T:  Verifying Auditors in Relationships page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:31
+      Click on Auditos Tab    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\RelationshipsPage.robot:47
+      Click Element    ${Auditors}
+      |  ${Auditors} = //div[text()='Auditors'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//div[text()='Auditors']' not found.
+------------------------------------------------------------------------------
+Verifying Promoter Shareholding in Shareholding in Relationships p...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:34
+    T:  Verifying Promoter Shareholding in Shareholding in Relationships page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:37
+      Click on Shareholding Tab    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\RelationshipsPage.robot:52
+      Click Element    ${Shareholding}
+      |  ${Shareholding} = //div[text()='Shareholding'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//div[text()='Shareholding']' not found.
+------------------------------------------------------------------------------
+Verifying Non Promoter Shareholding in Shareholding in Relationshi...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:40
+    T:  Verifying Non Promoter Shareholding in Shareholding in Relationships page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:43
+      Click on Non Promoter Shareholding Tab    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\RelationshipsPage.robot:57
+      Click Element    ${NonPromoterShareholding}
+      |  ${NonPromoterShareholding} = //div[contains(text(),'Non Promoter Shareholding')] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//div[contains(text(),'Non Promoter Shareholding')]' not found.
+------------------------------------------------------------------------------
+Verifying KMP Shareholding in Shareholding in Relationships page :...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:46
+    T:  Verifying KMP Shareholding in Shareholding in Relationships page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:49
+      Click on KMP Shareholding Tab    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\RelationshipsPage.robot:63
+      Click Element    ${KMP_Shareholding}
+      |  ${KMP_Shareholding} = //div[contains(text(),'KMP Shareholding')] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//div[contains(text(),'KMP Shareholding')]' not found.
+------------------------------------------------------------------------------
+Verifying Group structure in Relationships page :: TC-6 Test Group...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:53
+    T:  Verifying Group structure in Relationships page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot:56
+      Click on Group structure Tab    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\RelationshipsPage.robot:68
+      Click Element    ${Group_Structure}
+      |  ${Group_Structure} = //div[contains(text(),'Group structure')] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//div[contains(text(),'Group structure')]' not found.
+------------------------------------------------------------------------------
+TestSuites.TS4 Relationships.TC4 RELATIONSHIPS                        | FAIL |
+6 tests, 0 passed, 6 failed
+==============================================================================
+TestSuites.TS4 Relationships                                          | FAIL |
+6 tests, 0 passed, 6 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+6 tests, 0 passed, 6 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\13\output.xml

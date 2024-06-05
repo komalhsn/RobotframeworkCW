@@ -1,0 +1,33 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS12 NEWS                                                          
+==============================================================================
+TestSuites.TS12 NEWS.TC12 NEWS                                                
+==============================================================================
+Verifying NEWS page :: TC-1 Test the NEWS page                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS12_NEWS\TC12_NEWS.robot:10
+    T:  Verifying NEWS page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS12_NEWS\TC12_NEWS.robot:13
+      Login to the application and search customer name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\CommonKeywords\GenralKeywords.robot:107
+      Wait Until Element Is Visible    ${SEARCHED ITEM}
+      |  ${SEARCHED ITEM} = (//div[@class='d-flex align-items-center'])[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+TestSuites.TS12 NEWS.TC12 NEWS                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestSuites.TS12 NEWS                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\3\output.xml

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T15:27:27.473035" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuites" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites">
+<suite id="s1-s1" name="TS1 Signin" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS1_Signin">
+<suite id="s1-s1-s1" name="TC1 SIGNIN" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS1_Signin\TC1_SIGNIN.robot">
+<test id="s1-s1-s1-t1" name="SignIn With Invalid Username and Invalid Password From CSV" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:27:28.097683" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-04T15:27:28.096531" elapsed="31.827880"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-04T15:27:59.924411" elapsed="0.593353"/>
+</kw>
+<kw name="Click Login Button" owner="SignINPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:00.520787" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:00.519560" elapsed="2.905569"/>
+</kw>
+<doc>Clicks on the login button</doc>
+<status status="PASS" start="2024-06-04T15:28:00.518760" elapsed="2.906369"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:28:05.425648" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:28:03.425129" elapsed="2.000519"/>
+</kw>
+<kw name="SignIn With Invalid Username and Invalid Password From CSV" owner="SignINPage">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:28:05.429195" level="INFO">${credentials} = [{'username': 'user1', 'password': 'pass123'}, {'username': '.', 'password': 'Credi!123'}, {'username': 'credibot@crediwatch.com', 'password': '.'}, {'username': 'credibot@crediwatch.com', 'password':...</msg>
+<var>${credentials}</var>
+<arg>${SIGNIN_CSVFile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:28:05.427674" elapsed="0.001521"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:05.430649" level="INFO">${username} = user1</msg>
+<var>${username}</var>
+<arg>${credentials[0]['username']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:05.429195" elapsed="0.001454"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:05.432978" level="INFO">${password} = pass123</msg>
+<var>${password}</var>
+<arg>${credentials[0]['password']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:05.430649" elapsed="0.002329"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:05.433998" level="INFO">Typing text 'user1' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:05.432978" elapsed="0.812885"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:06.245863" level="INFO">Typing text 'pass123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:06.245863" elapsed="1.060032"/>
+</kw>
+<doc>SignIn With Invalid Username and Invalid Password From CSV</doc>
+<status status="PASS" start="2024-06-04T15:28:05.425648" elapsed="1.880247"/>
+</kw>
+<kw name="Click Signin Button" owner="SignINPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:07.311411" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:07.311411" elapsed="1.602534"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:28:07.305895" elapsed="1.608050"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:08.932016" level="INFO">${title} = Signin</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-04T15:28:08.913945" elapsed="0.018071"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-04T15:28:08.932016" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>App - Crediwatch</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-06-04T15:28:08.935031" elapsed="0.000000"/>
+</kw>
+<doc>TC-1 Test the sign-in page using Invalid Username and Invalid Password From CSV</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:27:28.093130" elapsed="40.841901"/>
+</test>
+<test id="s1-s1-s1-t2" name="SignIn With Only Valid Password From CSV" line="37">
+<kw name="SignIn With Only Valid Password From CSV" owner="SignINPage">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:28:08.935031" level="INFO">${credentials} = [{'username': 'user1', 'password': 'pass123'}, {'username': '.', 'password': 'Credi!123'}, {'username': 'credibot@crediwatch.com', 'password': '.'}, {'username': 'credibot@crediwatch.com', 'password':...</msg>
+<var>${credentials}</var>
+<arg>${SIGNIN_CSVFile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:28:08.935031" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:08.935031" level="INFO">${username} = .</msg>
+<var>${username}</var>
+<arg>${credentials[1]['username']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:08.935031" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:08.943052" level="INFO">${password} = Credi!123</msg>
+<var>${password}</var>
+<arg>${credentials[1]['password']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:08.935031" elapsed="0.008021"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:08.943052" level="INFO">Typing text '.' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:08.943052" elapsed="0.877291"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:09.820343" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:09.820343" elapsed="0.241436"/>
+</kw>
+<doc>SignIn With Only Valid Password From CSV</doc>
+<status status="PASS" start="2024-06-04T15:28:08.935031" elapsed="1.126748"/>
+</kw>
+<kw name="Click Signin Button" owner="SignINPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:10.061779" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:10.061779" elapsed="0.991620"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:28:10.061779" elapsed="0.999613"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:11.077393" level="INFO">${title} = Signin</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.061392" elapsed="0.016001"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.077393" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>App - Crediwatch</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.077393" elapsed="0.000000"/>
+</kw>
+<doc>TC-2 Test the sign-in page using Only Valid Password From CSV</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:28:08.935031" elapsed="2.142362"/>
+</test>
+<test id="s1-s1-s1-t3" name="SignIn With Only Valid Username From CSV" line="46">
+<kw name="SignIn With Only Valid Username From CSV" owner="SignINPage">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:28:11.085414" level="INFO">${credentials} = [{'username': 'user1', 'password': 'pass123'}, {'username': '.', 'password': 'Credi!123'}, {'username': 'credibot@crediwatch.com', 'password': '.'}, {'username': 'credibot@crediwatch.com', 'password':...</msg>
+<var>${credentials}</var>
+<arg>${SIGNIN_CSVFile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.085414" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:11.085414" level="INFO">${username} = credibot@crediwatch.com</msg>
+<var>${username}</var>
+<arg>${credentials[2]['username']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.085414" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:11.089431" level="INFO">${password} = .</msg>
+<var>${password}</var>
+<arg>${credentials[2]['password']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.089431" elapsed="0.001538"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:11.090969" level="INFO">Typing text 'credibot@crediwatch.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.090969" elapsed="0.492056"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:11.583025" level="INFO">Typing text '.' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.583025" elapsed="0.284226"/>
+</kw>
+<doc>SignIn With Only Valid Username From CSV</doc>
+<status status="PASS" start="2024-06-04T15:28:11.077393" elapsed="0.789858"/>
+</kw>
+<kw name="Click Signin Button" owner="SignINPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:11.875472" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.874508" elapsed="1.088854"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:28:11.873909" elapsed="1.089453"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:12.987356" level="INFO">${title} = Signin</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-04T15:28:12.971364" elapsed="0.015992"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-04T15:28:12.995383" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>App - Crediwatch</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-06-04T15:28:12.995383" elapsed="0.002019"/>
+</kw>
+<doc>TC-3 Test the sign-in page using Only Valid Username From CSV</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:28:11.077393" elapsed="1.920009"/>
+</test>
+<test id="s1-s1-s1-t4" name="SignIn With Valid Username and Invalid Password From CSV" line="55">
+<kw name="SignIn With Valid Username and Invalid Password From CSV" owner="SignINPage">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:28:13.002499" level="INFO">${credentials} = [{'username': 'user1', 'password': 'pass123'}, {'username': '.', 'password': 'Credi!123'}, {'username': 'credibot@crediwatch.com', 'password': '.'}, {'username': 'credibot@crediwatch.com', 'password':...</msg>
+<var>${credentials}</var>
+<arg>${SIGNIN_CSVFile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:28:12.999950" elapsed="0.002549"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:13.003542" level="INFO">${username} = credibot@crediwatch.com</msg>
+<var>${username}</var>
+<arg>${credentials[3]['username']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:13.003542" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:13.003542" level="INFO">${password} = pass123</msg>
+<var>${password}</var>
+<arg>${credentials[3]['password']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:13.003542" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:13.003542" level="INFO">Typing text 'credibot@crediwatch.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:13.003542" elapsed="0.642727"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:13.648782" level="INFO">Typing text 'pass123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:13.646269" elapsed="0.387234"/>
+</kw>
+<doc>SignIn With Valid Username and Invalid Password From CSV</doc>
+<status status="PASS" start="2024-06-04T15:28:12.999950" elapsed="1.033553"/>
+</kw>
+<kw name="Click Signin Button" owner="SignINPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:14.033503" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:14.033503" elapsed="0.851816"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:28:14.033503" elapsed="0.851816"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:14.918774" level="INFO">${title} = Signin</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-04T15:28:14.885319" elapsed="0.033455"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-04T15:28:14.918774" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>App - Crediwatch</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-06-04T15:28:14.918774" elapsed="0.000000"/>
+</kw>
+<doc>TC-4 Test the sign-in page using Valid Username and Invalid Password From CSV</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:28:12.997402" elapsed="1.921372"/>
+</test>
+<test id="s1-s1-s1-t5" name="SignIn With Invalid Username and Valid Password From CSV" line="64">
+<kw name="SignIn With Invalid Username and Valid Password From CSV" owner="SignINPage">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:28:14.925294" level="INFO">${credentials} = [{'username': 'user1', 'password': 'pass123'}, {'username': '.', 'password': 'Credi!123'}, {'username': 'credibot@crediwatch.com', 'password': '.'}, {'username': 'credibot@crediwatch.com', 'password':...</msg>
+<var>${credentials}</var>
+<arg>${SIGNIN_CSVFile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:28:14.918774" elapsed="0.006520"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:14.925294" level="INFO">${username} = user1</msg>
+<var>${username}</var>
+<arg>${credentials[4]['username']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:14.925294" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:14.933413" level="INFO">${password} = Credi!123</msg>
+<var>${password}</var>
+<arg>${credentials[4]['password']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:14.925294" elapsed="0.008119"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:14.933636" level="INFO">Typing text 'user1' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:14.933636" elapsed="0.313538"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:15.247174" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:15.247174" elapsed="0.291152"/>
+</kw>
+<doc>SignIn With Invalid Username and Valid Password From CSV</doc>
+<status status="PASS" start="2024-06-04T15:28:14.918774" elapsed="0.619552"/>
+</kw>
+<kw name="Click Signin Button" owner="SignINPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:15.538326" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:15.538326" elapsed="1.296332"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:28:15.538326" elapsed="1.296332"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:16.862358" level="INFO">${title} = Signin</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-04T15:28:16.842690" elapsed="0.019668"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-04T15:28:16.862358" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>App - Crediwatch</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-06-04T15:28:16.862358" elapsed="0.000000"/>
+</kw>
+<doc>TC-5 Test the sign-in page using Invalid Username and Valid Password From CSV</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:28:14.918774" elapsed="1.943584"/>
+</test>
+<test id="s1-s1-s1-t6" name="SignIn With blank Username and blank Password From CSV" line="73">
+<kw name="SignIn With blank Username and blank Password From CSV" owner="SignINPage">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:28:16.867875" level="INFO">${credentials} = [{'username': 'user1', 'password': 'pass123'}, {'username': '.', 'password': 'Credi!123'}, {'username': 'credibot@crediwatch.com', 'password': '.'}, {'username': 'credibot@crediwatch.com', 'password':...</msg>
+<var>${credentials}</var>
+<arg>${SIGNIN_CSVFile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:28:16.862358" elapsed="0.005517"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:16.867875" level="INFO">${username} = .</msg>
+<var>${username}</var>
+<arg>${credentials[5]['username']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:16.867875" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:16.867875" level="INFO">${password} = .</msg>
+<var>${password}</var>
+<arg>${credentials[5]['password']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:16.867875" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:16.867875" level="INFO">Typing text '.' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:16.867875" elapsed="0.163242"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:17.043754" level="INFO">Typing text '.' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:17.031117" elapsed="0.232718"/>
+</kw>
+<doc>SignIn With blank Username and blank Password From CSV</doc>
+<status status="PASS" start="2024-06-04T15:28:16.862358" elapsed="0.402696"/>
+</kw>
+<kw name="Click Signin Button" owner="SignINPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:17.265054" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:17.265054" elapsed="1.385554"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:28:17.265054" elapsed="1.385554"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:18.691088" level="INFO">${title} = Signin</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-04T15:28:18.650608" elapsed="0.040480"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-04T15:28:18.691088" elapsed="0.000000"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>App - Crediwatch</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-06-04T15:28:18.699746" elapsed="0.000000"/>
+</kw>
+<doc>TC-6 Test the sign-in page using blank Username and blank Password From CSV</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:28:16.862358" elapsed="1.837388"/>
+</test>
+<test id="s1-s1-s1-t7" name="SignIn With Valid Username and Valid Password From CSV" line="83">
+<kw name="SignIn With Valid Username and Valid Password From CSV" owner="SignINPage">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:28:18.718897" level="INFO">${credentials} = [{'username': 'user1', 'password': 'pass123'}, {'username': '.', 'password': 'Credi!123'}, {'username': 'credibot@crediwatch.com', 'password': '.'}, {'username': 'credibot@crediwatch.com', 'password':...</msg>
+<var>${credentials}</var>
+<arg>${SIGNIN_CSVFile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:28:18.707275" elapsed="0.011622"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:18.720958" level="INFO">${username} = credibot@crediwatch.com</msg>
+<var>${username}</var>
+<arg>${credentials[6]['username']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:18.718897" elapsed="0.002061"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:18.729477" level="INFO">${password} = Credi!123</msg>
+<var>${password}</var>
+<arg>${credentials[6]['password']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:18.724210" elapsed="0.005267"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:18.731998" level="INFO">Typing text 'credibot@crediwatch.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:18.731998" elapsed="0.657336"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:19.389334" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:19.389334" elapsed="0.316960"/>
+</kw>
+<doc>SignIn With Valid Username and Valid Password From CSV</doc>
+<status status="PASS" start="2024-06-04T15:28:18.699746" elapsed="1.006548"/>
+</kw>
+<kw name="Click Signin Button" owner="SignINPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:19.711715" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:19.711715" elapsed="1.851619"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:28:19.710649" elapsed="1.852685"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:28:26.069213" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:28:21.563334" elapsed="4.505879"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:27.557876" level="INFO">${title} = App - Crediwatch</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-04T15:28:26.082935" elapsed="1.474941"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-04T15:28:27.557876" elapsed="0.008469"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>App - Crediwatch</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-06-04T15:28:27.566345" elapsed="0.007064"/>
+</kw>
+<doc>TC-7 Test the sign-in page using Valid Username and Valid Password From CSV</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:28:18.699746" elapsed="8.873663"/>
+</test>
+<status status="PASS" start="2024-06-04T15:27:27.552110" elapsed="62.787544"/>
+</suite>
+<status status="PASS" start="2024-06-04T15:27:27.546408" elapsed="62.805544"/>
+</suite>
+<status status="PASS" start="2024-06-04T15:27:27.518351" elapsed="62.839220"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="7" fail="0" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="TestSuites">TestSuites</stat>
+<stat pass="7" fail="0" skip="0" id="s1-s1" name="TS1 Signin">TestSuites.TS1 Signin</stat>
+<stat pass="7" fail="0" skip="0" id="s1-s1-s1" name="TC1 SIGNIN">TestSuites.TS1 Signin.TC1 SIGNIN</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

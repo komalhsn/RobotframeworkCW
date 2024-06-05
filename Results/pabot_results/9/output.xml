@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T15:29:55.130804" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuites" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites">
+<suite id="s1-s1" name="TS18 Portfolio" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio">
+<suite id="s1-s1-s1" name="TC18.1 AddParties" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18.1_AddParties.robot">
+<test id="s1-s1-s1-t1" name="Verify user should not able to create the portfolio with the existsing portfolio name" line="11">
+<kw name="Open Browser and Login" owner="GenralKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:56.434928" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-04T15:29:56.426883" elapsed="41.386008"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-04T15:30:37.812891" elapsed="0.574194"/>
+</kw>
+<kw name="Click Login Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:38.395089" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:38.387085" elapsed="3.685326"/>
+</kw>
+<doc>Clicks on the login button</doc>
+<status status="PASS" start="2024-06-04T15:30:38.387085" elapsed="3.685326"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:30:44.073739" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:30:42.072411" elapsed="2.001328"/>
+</kw>
+<kw name="SignIn to the Application" owner="GenralKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:44.075633" level="INFO">Typing text 'credibot@ktkbank.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:44.075461" elapsed="0.288784"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:44.367255" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:44.365251" elapsed="0.204577"/>
+</kw>
+<arg>credibot@ktkbank.com</arg>
+<arg>Credi!123</arg>
+<doc>Signs in using provided username and password</doc>
+<status status="PASS" start="2024-06-04T15:30:44.074382" elapsed="0.497176"/>
+</kw>
+<kw name="Click Signin Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:44.573123" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:44.571971" elapsed="2.307603"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:30:44.571971" elapsed="2.307603"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4S</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-04T15:30:46.880736" elapsed="0.003200"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:29:56.395115" elapsed="50.488821"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:30:51.885430" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:30:46.883936" elapsed="5.001494"/>
+</kw>
+<kw name="Click on Portfolios on LHS in features list of dashboard" owner="PortfoliosPage">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:51.886469" level="INFO">Clicking link '//a[text()='Portfolios']'.</msg>
+<arg>${Portfolios}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:51.886469" elapsed="0.208254"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:30:57.097211" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:30:52.094723" elapsed="5.002488"/>
+</kw>
+<doc>Click on Parties on LHS in features list of dashboard</doc>
+<status status="PASS" start="2024-06-04T15:30:51.886469" elapsed="5.210742"/>
+</kw>
+<kw name="Click on create portfolio button" owner="PortfoliosPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:57.097211" level="INFO">Clicking button '//button[contains(text(),'Create Portfolio')]'.</msg>
+<arg>${CreatePortfolioBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:57.097211" elapsed="0.228796"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:30:57.097211" elapsed="0.228796"/>
+</kw>
+<kw name="Enter Portfolio Name and Description" owner="PortfoliosPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:57.334188" level="INFO">Clicking element '//input[@id='name']'.</msg>
+<arg>${PortfolioName}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:57.334188" elapsed="0.162691"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:30:59.503393" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:30:57.496879" elapsed="2.006514"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:59.503393" level="INFO">Clicking element '//input[@id='name']'.</msg>
+<arg>${PortfolioName}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:59.503393" elapsed="0.097205"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:31:01.602443" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:30:59.600598" elapsed="2.001845"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:01.602443" level="INFO">Typing text 'Automation Test Portfolio' into text field '//input[@id='name']'.</msg>
+<arg>${PortfolioName}</arg>
+<arg>Automation Test Portfolio</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:01.602443" elapsed="0.280292"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:31:03.883660" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:31:01.882735" elapsed="2.000925"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:03.883660" level="INFO">Clicking element '//textarea[@id='description']'.</msg>
+<arg>${PortfolioDescription}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:03.883660" elapsed="0.189503"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:31:06.073600" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:31:04.073163" elapsed="2.000437"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:06.073600" level="INFO">Typing text 'Automation Test Description' into text field '//textarea[@id='description']'.</msg>
+<arg>${PortfolioDescription}</arg>
+<arg>Automation Test Description</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:06.073600" elapsed="0.275564"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:30:57.326007" elapsed="9.023157"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:31:11.366170" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:31:06.349164" elapsed="5.019618"/>
+</kw>
+<kw name="Click on Create Button" owner="PortfoliosPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:11.382914" level="INFO">Clicking button '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/button[2]'.</msg>
+<arg>${CreateBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:11.379334" elapsed="9.605213"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:31:11.368782" elapsed="9.615765"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:31:25.985360" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:31:20.984547" elapsed="5.002500"/>
+</kw>
+<kw name="Erorr message should dispaly" owner="PortfoliosPage">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:28.986238" level="INFO">Current page contains element 'xpath://body/div[@id='root']/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]'.</msg>
+<arg>xpath://body/div[@id='root']/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-06-04T15:31:25.991620" elapsed="2.994618"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:31:25.987047" elapsed="2.999191"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:31:30.986600" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:31:28.986238" elapsed="2.000362"/>
+</kw>
+<kw name="Close pop-up" owner="PortfoliosPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:30.998951" level="INFO">Clicking element 'xpath://span[contains(text(),'×')]'.</msg>
+<arg>xpath://span[contains(text(),'×')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:30.992356" elapsed="2.946502"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:31:30.991689" elapsed="2.947169"/>
+</kw>
+<doc>TC-1 Test if user should not able to create the portfolio with the existsing portfolio name</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:29:56.290210" elapsed="97.648648"/>
+</test>
+<test id="s1-s1-s1-t2" name="Verify that user can add parties to the newly created portfolio and cancle" line="26">
+<kw name="Click on portfolio name" owner="PortfoliosPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PortfolioLink}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-04T15:31:33.942935" elapsed="0.182949"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:34.125884" level="INFO">Clicking element '//a[contains(text(),'Automation Test Portfolio')]'.</msg>
+<arg>${PortfolioLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:34.125884" elapsed="0.388645"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:31:33.942935" elapsed="0.571594"/>
+</kw>
+<kw name="Add parties to the portfolio" owner="PortfoliosPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:34.514529" level="INFO">Clicking button '//button[text()=' Add Party']'.</msg>
+<arg>${AddPartyBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:34.514529" elapsed="1.242601"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:35.767342" level="INFO">Clicking element '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:35.757130" elapsed="0.128627"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:35.892559" level="INFO">Typing text 'wipro' into text field '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<arg>${PartyName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:35.890275" elapsed="0.166077"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:31:46.060068" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:31:36.056352" elapsed="10.003716"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:46.068186" level="INFO">Clicking element 'xpath://li[@id='react-autowhatever-1--item-0']'.</msg>
+<arg>xpath://li[@id='react-autowhatever-1--item-0']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:46.060068" elapsed="5.097411"/>
+</kw>
+<var name="${PartyName}">wipro</var>
+<status status="PASS" start="2024-06-04T15:31:35.890275" elapsed="15.267204"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:51.157479" level="INFO">Typing text 'TATA' into text field '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<arg>${PartyName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:51.157479" elapsed="2.116407"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:32:03.276005" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:31:53.273886" elapsed="10.002119"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:03.282771" level="INFO">Clicking element 'xpath://li[@id='react-autowhatever-1--item-0']'.</msg>
+<arg>xpath://li[@id='react-autowhatever-1--item-0']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:03.276005" elapsed="12.293227"/>
+</kw>
+<var name="${PartyName}">TATA</var>
+<status status="PASS" start="2024-06-04T15:31:51.157479" elapsed="24.411753"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:15.569232" level="INFO">Typing text 'Reliance' into text field '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<arg>${PartyName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:15.569232" elapsed="13.998248"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:32:39.573212" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:32:29.572990" elapsed="10.000222"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:39.573212" level="INFO">Clicking element 'xpath://li[@id='react-autowhatever-1--item-0']'.</msg>
+<arg>xpath://li[@id='react-autowhatever-1--item-0']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:39.573212" elapsed="0.577842"/>
+</kw>
+<var name="${PartyName}">Reliance</var>
+<status status="PASS" start="2024-06-04T15:32:15.569232" elapsed="24.581822"/>
+</iter>
+<var>${PartyName}</var>
+<value>@{PartyName}</value>
+<status status="PASS" start="2024-06-04T15:31:35.885757" elapsed="64.265297"/>
+</for>
+<status status="PASS" start="2024-06-04T15:31:34.514529" elapsed="65.636525"/>
+</kw>
+<kw name="Click on clear button" owner="PortfoliosPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:40.153122" level="INFO">Clicking button '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/button[1]'.</msg>
+<arg>${ClearBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:40.153122" elapsed="0.229900"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:32:40.152591" elapsed="0.230431"/>
+</kw>
+<kw name="Close pop-up" owner="PortfoliosPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:40.383022" level="INFO">Clicking element 'xpath://span[contains(text(),'×')]'.</msg>
+<arg>xpath://span[contains(text(),'×')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:40.383022" elapsed="0.891476"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:32:40.383022" elapsed="0.891476"/>
+</kw>
+<doc>TC-2 Test if user can add parties to the newly created portfolio and cancle</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:31:33.938858" elapsed="67.335640"/>
+</test>
+<test id="s1-s1-s1-t3" name="Verify that user can add parties to the newly created portfolio" line="34">
+<try>
+<branch type="TRY">
+<kw name="Add parties to the portfolio" owner="PortfoliosPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:41.284036" level="INFO">Clicking button '//button[text()=' Add Party']'.</msg>
+<arg>${AddPartyBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:41.284036" elapsed="2.019203"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:43.303239" level="INFO">Clicking element '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:43.303239" elapsed="1.690231"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:44.996584" level="INFO">Typing text 'wipro' into text field '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<arg>${PartyName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:44.996584" elapsed="1.723928"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:32:56.720861" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:32:46.720512" elapsed="10.000349"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:56.720861" level="INFO">Clicking element 'xpath://li[@id='react-autowhatever-1--item-0']'.</msg>
+<arg>xpath://li[@id='react-autowhatever-1--item-0']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:56.720861" elapsed="0.354480"/>
+</kw>
+<var name="${PartyName}">wipro</var>
+<status status="PASS" start="2024-06-04T15:32:44.993470" elapsed="12.081871"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:57.075341" level="INFO">Typing text 'TATA' into text field '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<arg>${PartyName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:57.075341" elapsed="0.391086"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:33:07.467027" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:32:57.466427" elapsed="10.000600"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:07.477430" level="INFO">Clicking element 'xpath://li[@id='react-autowhatever-1--item-0']'.</msg>
+<arg>xpath://li[@id='react-autowhatever-1--item-0']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:33:07.472854" elapsed="5.550923"/>
+</kw>
+<var name="${PartyName}">TATA</var>
+<status status="PASS" start="2024-06-04T15:32:57.075341" elapsed="15.948436"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:13.056005" level="INFO">Typing text 'Reliance' into text field '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<arg>${PartyName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:33:13.056005" elapsed="4.825098"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:33:27.894989" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:33:17.883547" elapsed="10.011442"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:27.894989" level="INFO">Clicking element 'xpath://li[@id='react-autowhatever-1--item-0']'.</msg>
+<arg>xpath://li[@id='react-autowhatever-1--item-0']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:33:27.894989" elapsed="0.368413"/>
+</kw>
+<var name="${PartyName}">Reliance</var>
+<status status="PASS" start="2024-06-04T15:33:13.023777" elapsed="15.239625"/>
+</iter>
+<var>${PartyName}</var>
+<value>@{PartyName}</value>
+<status status="PASS" start="2024-06-04T15:32:44.993470" elapsed="43.269932"/>
+</for>
+<status status="PASS" start="2024-06-04T15:32:41.282520" elapsed="46.980882"/>
+</kw>
+<kw name="Click on Add button" owner="PortfoliosPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:28.263402" level="INFO">Clicking button '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/button[2]'.</msg>
+<arg>${AddBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:33:28.263402" elapsed="0.170873"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:33:28.263402" elapsed="0.170873"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:32:41.274498" elapsed="47.159777"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Close pop-up" owner="PortfoliosPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:28.440242" level="INFO">Clicking element 'xpath://span[contains(text(),'×')]'.</msg>
+<arg>xpath://span[contains(text(),'×')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:33:28.434275" elapsed="0.117109"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:33:28.434275" elapsed="0.117109"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:33:28.434275" elapsed="0.117109"/>
+</branch>
+<status status="PASS" start="2024-06-04T15:32:41.274498" elapsed="47.276886"/>
+</try>
+<doc>TC-3 Test if user can add parties to the newly created portfolio</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:32:41.274498" elapsed="47.276886"/>
+</test>
+<test id="s1-s1-s1-t4" name="Verify if user can click on Alert Tab to view alert details" line="47">
+<kw name="Click on Alert Tab" owner="PortfoliosPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:28.560649" level="INFO">Clicking element '//div[contains(text(),'Alerts')]'.</msg>
+<arg>${AlertTab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:33:28.557134" elapsed="0.467549"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:33:28.557134" elapsed="0.467549"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:29.042819" level="INFO">Current location contains 'alerts'.</msg>
+<arg>alerts</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2024-06-04T15:33:29.024683" elapsed="0.018136"/>
+</kw>
+<doc>TC-4 Test if user can click on Alert Tab to view alert details</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:33:28.555921" elapsed="0.486898"/>
+</test>
+<status status="PASS" start="2024-06-04T15:29:55.259728" elapsed="213.783091"/>
+</suite>
+<status status="PASS" start="2024-06-04T15:29:55.259728" elapsed="213.788107"/>
+</suite>
+<status status="PASS" start="2024-06-04T15:29:55.211116" elapsed="213.837757"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="0" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="TestSuites">TestSuites</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="TS18 Portfolio">TestSuites.TS18 Portfolio</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1" name="TC18.1 AddParties">TestSuites.TS18 Portfolio.TC18.1 AddParties</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

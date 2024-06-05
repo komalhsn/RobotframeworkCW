@@ -1,0 +1,60 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS7 Legal                                                          
+==============================================================================
+TestSuites.TS7 Legal.TC7 LEGAL                                                
+==============================================================================
+Verifying Legal page :: TC-1 Test the Legal page                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS7_Legal\TC7_LEGAL.robot:11
+    T:  Verifying Legal page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS7_Legal\TC7_LEGAL.robot:14
+      Login to the application and search customer name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\CommonKeywords\GenralKeywords.robot:104
+      Click Search Bar    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\CommonKeywords\GenralKeywords.robot:46
+      Click Element    ${SEARCH BAR}
+      |  ${SEARCH BAR} = //input[@id='searchText'] (str)
+______________________________________________________________________________
+| FAIL |
+ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF631FB1F22+60322]
+	(No symbol) [0x00007FF631F2CE99]
+	(No symbol) [0x00007FF631DE7CE9]
+	(No symbol) [0x00007FF631E389C2]
+	(No symbol) [0x00007FF631E2B491]
+	(No symbol) [0x00007FF631E5C21A]
+	(No symbol) [0x00007FF631E2ADB6]
+	(No symbol) [0x00007FF631E5C430]
+	(No symbol) [0x00007FF631E7BC80]
+	(No symbol) [0x00007FF631E5BFC3]
+	(No symbol) [0x00007FF631E29617]
+	(No symbol) [0x00007FF631E2A211]
+	GetHandleVerifier [0x00007FF6322C946D+3301613]
+	GetHandleVerifier [0x00007FF632313693+3605267]
+	GetHandleVerifier [0x00007FF632309410+3563664]
+	GetHandleVerifier [0x00007FF6320642F6+790390]
+	(No symbol) [0x00007FF631F374DF]
+	(No symbol) [0x00007FF631F333D4]
+	(No symbol) [0x00007FF631F33562]
+	(No symbol) [0x00007FF631F22F6F]
+	BaseThreadInitThunk [0x00007FFCB8C0257D+29]
+	RtlUserThreadStart [0x00007FFCBA3EAA48+40]
+------------------------------------------------------------------------------
+TestSuites.TS7 Legal.TC7 LEGAL                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestSuites.TS7 Legal                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\16\output.xml

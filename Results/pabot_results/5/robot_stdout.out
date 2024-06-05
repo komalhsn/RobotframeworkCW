@@ -1,0 +1,68 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS14 Alerts                                                        
+==============================================================================
+TestSuites.TS14 Alerts.TC14 Alerts                                            
+==============================================================================
+Verify Alert Page :: TC-1 Test Alerts Page                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS14_Alerts\TC14_Alerts.robot:12
+    T:  Verify Alert Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS14_Alerts\TC14_Alerts.robot:15
+      Login to the application and search customer name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\CommonKeywords\GenralKeywords.robot:107
+      Wait Until Element Is Visible    ${SEARCHED ITEM}
+      |  ${SEARCHED ITEM} = (//div[@class='d-flex align-items-center'])[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+Verify Alert details :: TC-2 Test Alert Details page                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS14_Alerts\TC14_Alerts.robot:19
+    T:  Verify Alert details    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS14_Alerts\TC14_Alerts.robot:22
+      Click on Details button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\AlertsPage.robot:27
+      Click Button    ${AlertDetailsBtn}
+      |  ${AlertDetailsBtn} = //button[text()='Details'] (str)
+______________________________________________________________________________
+| FAIL |
+Button with locator '//button[text()='Details']' not found.
+------------------------------------------------------------------------------
+Verify if user can cancle the creation of cases from alert details...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS14_Alerts\TC14_Alerts.robot:24
+    T:  Verify if user can cancle the creation of cases from alert details pop-up    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS14_Alerts\TC14_Alerts.robot:27
+      Click on create button to create manual case from alert details pop-up    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\AlertsPage.robot:35
+      Click Button    ${createbtn}
+      |  ${createbtn} = //button[text()='Create'] (str)
+______________________________________________________________________________
+| FAIL |
+Button with locator '//button[text()='Create']' not found.
+------------------------------------------------------------------------------
+Verify if user can create the cases from alert details pop-up :: T... | FAIL |
+TRY structure must have EXCEPT or FINALLY branch.
+------------------------------------------------------------------------------
+TestSuites.TS14 Alerts.TC14 Alerts                                    | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+TestSuites.TS14 Alerts                                                | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\5\output.xml

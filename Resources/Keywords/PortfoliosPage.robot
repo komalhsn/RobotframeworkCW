@@ -20,7 +20,13 @@ ${SearchParty}      //body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[
 ${AddBtn}       //body/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/button[2]
 @{PartyName}    wipro   TATA    Reliance
 ${ClearBtn}     //body/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/button[1]
-
+${SearhPortfoliofilters}      //input[@placeholder='Search By Portfolio']
+${FilterApplyBtn}     //button[contains(text(),'Apply')]
+${FilterClearBtn}   //button[contains(text(),'Clear')]
+@{PortfolioFilter}      Automation  test    demo
+${ErrorMsg}     xpath://body/div[@id='root']/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]
+${Subtitle}     //small[@class='menu-header-subtitle d-none d-md-block']
+${AlertTab}     //div[contains(text(),'Alerts')]
 
 *** Keywords ***
 Click on Portfolios on LHS in features list of dashboard
@@ -41,13 +47,13 @@ Click on create portfolio button
 
 Enter Portfolio Name and Description
     click element   ${PortfolioName}
-    sleep    5s
+    sleep    2s
     click element    ${PortfolioName}
-    sleep    5s
+    sleep    2s
     input text    ${PortfolioName}    Automation Test Portfolio
-    sleep    5s
+    sleep    2s
     click element    ${PortfolioDescription}
-    sleep    5s
+    sleep    2s
     input text    ${PortfolioDescription}       Automation Test Description
 
 Click on Create Button
@@ -82,4 +88,26 @@ Click on clear button
 Click on Add button
     click button    ${AddBtn}
 
+Click on filters
+    click element    ${SearhPortfoliofilters}
+    sleep    5s
+    FOR    ${filters}   IN  @{PortfolioFilter}
+        input text    ${SearhPortfoliofilters}    ${filters}
+        click button    ${FilterClearBtn}
+        sleep    5s
+        input text    ${SearhPortfoliofilters}    ${filters}
+        sleep    5s
+        click button    ${FilterApplyBtn}
+    END
 
+
+Click on All Portfolios Preset filters
+    click element    //span[contains(text(),'All portfolios')]
+    LOG    ${Subtitle}
+
+Click on Owned By Me Portfolio Preset filters
+    click element    //span[contains(text(),'Owned By Me')]
+    LOG    ${Subtitle}
+
+Click on Alert Tab
+    click element    ${AlertTab}

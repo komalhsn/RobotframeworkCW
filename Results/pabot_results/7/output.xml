@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T15:29:26.311317" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuites" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites">
+<suite id="s1-s1" name="TS17 Parties" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS17_Parties">
+<suite id="s1-s1-s1" name="TC17 PARTIES" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS17_Parties\TC17_PARTIES.robot">
+<test id="s1-s1-s1-t1" name="Verify user can navigate to parties page" line="11">
+<kw name="Open Browser and Login" owner="GenralKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:27.363239" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-04T15:29:27.361369" elapsed="14.040096"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-04T15:29:41.402603" elapsed="0.178362"/>
+</kw>
+<kw name="Click Login Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:41.585297" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:41.583011" elapsed="2.149950"/>
+</kw>
+<doc>Clicks on the login button</doc>
+<status status="PASS" start="2024-06-04T15:29:41.581989" elapsed="2.150972"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:29:45.734559" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:29:43.732961" elapsed="2.001598"/>
+</kw>
+<kw name="SignIn to the Application" owner="GenralKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:45.738950" level="INFO">Typing text 'credibot@ktkbank.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:45.737795" elapsed="0.949825"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:46.687620" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:46.687620" elapsed="0.297482"/>
+</kw>
+<arg>credibot@ktkbank.com</arg>
+<arg>Credi!123</arg>
+<doc>Signs in using provided username and password</doc>
+<status status="PASS" start="2024-06-04T15:29:45.736440" elapsed="1.248662"/>
+</kw>
+<kw name="Click Signin Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:46.986769" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:46.986769" elapsed="2.267152"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:29:46.985102" elapsed="2.268819"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4S</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-04T15:29:49.254926" elapsed="0.005318"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:29:27.359201" elapsed="21.902046"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:29:54.264159" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:29:49.262635" elapsed="5.001524"/>
+</kw>
+<kw name="Click on Parties on LHS in features list of dashboard" owner="PartiesPage">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:54.264159" level="INFO">Clicking link '//a[text()='Parties']'.</msg>
+<msg time="2024-06-04T15:30:02.540504" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:30:02.540504" level="FAIL">Link with locator '//a[text()='Parties']' not found.</msg>
+<arg>${Parties}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:29:54.264159" elapsed="8.363847">Link with locator '//a[text()='Parties']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:30:03.369293" elapsed="0.011209"/>
+</kw>
+<doc>Click on Parties on LHS in features list of dashboard</doc>
+<status status="FAIL" start="2024-06-04T15:29:54.264159" elapsed="9.120921">Link with locator '//a[text()='Parties']' not found.</status>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<arg>parties</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:30:03.387276" elapsed="0.006738"/>
+</kw>
+<doc>TC-1 Test if user can click on parties and navigate to parties page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:29:27.356828" elapsed="36.040408">Link with locator '//a[text()='Parties']' not found.</status>
+</test>
+<test id="s1-s1-s1-t2" name="Verify collaborators role for the party" line="19">
+<kw name="Click on collaborators icon and get the details" owner="PartiesPage">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:03.897664" level="INFO">Simulating Mouse Over on element '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/div[2]/div[1]/div[2]/div[1]/div[2]/button[1]/i[1]'.</msg>
+<msg time="2024-06-04T15:30:11.924462" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:30:11.924462" level="FAIL">Element with locator '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/div[2]/div[1]/div[2]/div[1]/div[2]/button[1]/i[1]' not found.</msg>
+<arg>${CollaboratorsIcon}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:30:03.855541" elapsed="8.068921">Element with locator '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/div[2]/div[1]/div[2]/div[1]/div[2]/button[1]/i[1]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${CollaboratorsIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:30:11.924462" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${collaborators_list}</var>
+<arg>${Collaborators}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:30:11.924462" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>List of collaborators:</arg>
+<arg>${collaborators_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-06-04T15:30:11.924462" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:30:11.924462" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'×')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:30:11.924462" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-04T15:30:03.427852" elapsed="8.496610">Element with locator '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/div[2]/div[1]/div[2]/div[1]/div[2]/button[1]/i[1]' not found.</status>
+</kw>
+<doc>TC-2 Test collaborators role for the party</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:30:03.402025" elapsed="8.522437">Element with locator '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/div[2]/div[1]/div[2]/div[1]/div[2]/button[1]/i[1]' not found.</status>
+</test>
+<test id="s1-s1-s1-t3" name="Verify Export button" line="24">
+<kw name="Click on Export button" owner="PartiesPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:11.932985" level="INFO">Clicking element '//span[text()='Export']'.</msg>
+<msg time="2024-06-04T15:30:16.700609" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:30:16.700609" level="FAIL">Element with locator '//span[text()='Export']' not found.</msg>
+<arg>${ExportBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:30:11.924462" elapsed="4.776147">Element with locator '//span[text()='Export']' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-04T15:30:11.924462" elapsed="4.776147">Element with locator '//span[text()='Export']' not found.</status>
+</kw>
+<doc>TC-3 Test Export button</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:30:11.924462" elapsed="4.776147">Element with locator '//span[text()='Export']' not found.</status>
+</test>
+<status status="FAIL" start="2024-06-04T15:29:26.437207" elapsed="50.268669"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:29:26.433342" elapsed="50.272534"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:29:26.384322" elapsed="50.324576"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="3" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="TestSuites">TestSuites</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="TS17 Parties">TestSuites.TS17 Parties</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1-s1" name="TC17 PARTIES">TestSuites.TS17 Parties.TC17 PARTIES</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

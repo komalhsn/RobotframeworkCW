@@ -1,0 +1,65 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS17 Parties                                                       
+==============================================================================
+TestSuites.TS17 Parties.TC17 PARTIES                                          
+==============================================================================
+Verify user can navigate to parties page :: TC-1 Test if user can ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS17_Parties\TC17_PARTIES.robot:11
+    T:  Verify user can navigate to parties page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS17_Parties\TC17_PARTIES.robot:16
+      Click on Parties on LHS in features list of dashboard    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\PartiesPage.robot:19
+      Click Link    ${Parties}
+      |  ${Parties} = //a[text()='Parties'] (str)
+______________________________________________________________________________
+| FAIL |
+Link with locator '//a[text()='Parties']' not found.
+------------------------------------------------------------------------------
+Verify collaborators role for the party :: TC-2 Test collaborators...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS17_Parties\TC17_PARTIES.robot:19
+    T:  Verify collaborators role for the party    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS17_Parties\TC17_PARTIES.robot:22
+      Click on collaborators icon and get the details    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\PartiesPage.robot:26
+      Mouse Over    ${CollaboratorsIcon}
+      |  ${CollaboratorsIcon} = //body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/div[2]/div[1]/div[2]/div[1]/div[2]/button[1]/i[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/div[2]/div[1]/div[2]/div[1]/div[2]/button[1]/i[1]' not found.
+------------------------------------------------------------------------------
+Verify Export button :: TC-3 Test Export button                         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS17_Parties\TC17_PARTIES.robot:24
+    T:  Verify Export button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS17_Parties\TC17_PARTIES.robot:27
+      Click on Export button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\PartiesPage.robot:23
+      Click Element    ${ExportBtn}
+      |  ${ExportBtn} = //span[text()='Export'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//span[text()='Export']' not found.
+------------------------------------------------------------------------------
+TestSuites.TS17 Parties.TC17 PARTIES                                  | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+TestSuites.TS17 Parties                                               | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\7\output.xml

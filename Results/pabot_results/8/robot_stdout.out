@@ -1,0 +1,130 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS18 Portfolio                                                     
+==============================================================================
+TestSuites.TS18 Portfolio.TC18 PORTFOLIOS                                     
+==============================================================================
+Verify user can navigate to portfolios page :: TC-1 Test if user c...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:11
+    T:  Verify user can navigate to portfolios page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:16
+      Click on Portfolios on LHS in features list of dashboard    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\PortfoliosPage.robot:34
+      Click Link    ${Portfolios}
+      |  ${Portfolios} = //a[text()='Portfolios'] (str)
+______________________________________________________________________________
+| FAIL |
+Link with locator '//a[text()='Portfolios']' not found.
+------------------------------------------------------------------------------
+Verify if user can view the portfolio collaborators :: TC-2 Test i...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:20
+    T:  Verify if user can view the portfolio collaborators    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:23
+      Click on collaborators icon and get the details    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\PortfoliosPage.robot:38
+      Mouse Over    ${CollaboratorsIcon}
+      |  ${CollaboratorsIcon} = //body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[3]/i[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[3]/i[1]' not found.
+------------------------------------------------------------------------------
+Verify user can cancel while creating a portfolio :: TC-3 Test if ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:25
+    T:  Verify user can cancel while creating a portfolio    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:28
+      Click on create portfolio button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\PortfoliosPage.robot:46
+      Click Button    ${CreatePortfolioBtn}
+      |  ${CreatePortfolioBtn} = //button[contains(text(),'Create Portfolio')] (str)
+______________________________________________________________________________
+| FAIL |
+Button with locator '//button[contains(text(),'Create Portfolio')]' not found.
+------------------------------------------------------------------------------
+Verify user can create portfolio :: TC-4 Test if user can create p...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:34
+    T:  Verify user can create portfolio    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:37
+          
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:38
+      Click on create portfolio button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\PortfoliosPage.robot:46
+      Click Button    ${CreatePortfolioBtn}
+      |  ${CreatePortfolioBtn} = //button[contains(text(),'Create Portfolio')] (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:34
+    T:  Verify user can create portfolio    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:47
+          
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:48
+      Close pop-up    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\PortfoliosPage.robot:69
+      Click Element    xpath://span[contains(text(),'×')]
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://span[contains(text(),'×')]' not found.
+------------------------------------------------------------------------------
+Verify filters to search portfolios :: TC-5 Test to verify filters...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:52
+    T:  Verify filters to search portfolios    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:55
+      Click on filters    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\PortfoliosPage.robot:92
+      Click Element    ${SearhPortfoliofilters}
+      |  ${SearhPortfoliofilters} = //input[@placeholder='Search By Portfolio'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//input[@placeholder='Search By Portfolio']' not found.
+------------------------------------------------------------------------------
+Verify preset filters in portfolio page :: TC-6 Test to verify pre...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:58
+    T:  Verify preset filters in portfolio page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot:61
+      Click on All Portfolios Preset filters    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\PortfoliosPage.robot:105
+      Click Element    //span[contains(text(),'All portfolios')]
+______________________________________________________________________________
+| FAIL |
+Element with locator '//span[contains(text(),'All portfolios')]' not found.
+------------------------------------------------------------------------------
+TestSuites.TS18 Portfolio.TC18 PORTFOLIOS                             | FAIL |
+6 tests, 0 passed, 6 failed
+==============================================================================
+TestSuites.TS18 Portfolio                                             | FAIL |
+6 tests, 0 passed, 6 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+6 tests, 0 passed, 6 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\8\output.xml

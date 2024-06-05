@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T15:32:02.193249" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuites" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites">
+<suite id="s1-s1" name="TS4 Relationships" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships">
+<suite id="s1-s1-s1" name="TC4 RELATIONSHIPS" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS4_Relationships\TC4_RELATIONSHIPS.robot">
+<test id="s1-s1-s1-t1" name="Verifying Signatories in Relationships page" line="14">
+<kw name="Login to the application and search customer name" owner="GenralKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:10.579520" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-04T15:32:10.573678" elapsed="30.878720"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-04T15:32:41.452398" elapsed="7.589214"/>
+</kw>
+<kw name="Click Login Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:49.049690" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:49.049690" elapsed="2.834348"/>
+</kw>
+<doc>Clicks on the login button</doc>
+<status status="PASS" start="2024-06-04T15:32:49.041612" elapsed="2.842426"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:32:53.888260" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:32:51.887575" elapsed="2.000685"/>
+</kw>
+<kw name="SignIn to the Application" owner="GenralKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:53.894985" level="INFO">Typing text 'credibot@ktkbank.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:53.888260" elapsed="0.529990"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:54.418250" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:54.418250" elapsed="0.714408"/>
+</kw>
+<arg>credibot@ktkbank.com</arg>
+<arg>Credi!123</arg>
+<doc>Signs in using provided username and password</doc>
+<status status="PASS" start="2024-06-04T15:32:53.888260" elapsed="1.244398"/>
+</kw>
+<kw name="Click Signin Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:55.132658" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:55.132658" elapsed="2.240940"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:32:55.132658" elapsed="2.240940"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4S</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-04T15:32:57.373598" elapsed="0.000000"/>
+</kw>
+<kw name="Click Search Bar" owner="GenralKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:57.381712" level="INFO">Clicking element '//input[@id='searchText']'.</msg>
+<arg>${SEARCH BAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:32:57.381113" elapsed="15.479986"/>
+</kw>
+<doc>Clicks on the search bar</doc>
+<status status="PASS" start="2024-06-04T15:32:57.373598" elapsed="15.487501"/>
+</kw>
+<kw name="Read Customer Name From CSV" owner="GenralKeywords">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:33:12.864647" level="INFO">${data} = [{'customername': 'INFOSYS LIMITED'}, {'customername': 'COFFEE DAY ENTERPRISES LIMITED'}, {'customername': 'PIRAMAL ENTERPRISES LIMITED'}, {'customername': 'JSW CEMENT LIMITED'}, {'customername': 'ADA...</msg>
+<var>${data}</var>
+<arg>${parties_csvfile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:33:12.864647" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:33:12.867199" level="INFO">${customer_name} = INFOSYS LIMITED</msg>
+<var>${customer_name}</var>
+<arg>${data[0]['customername']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:33:12.864647" elapsed="0.002552"/>
+</kw>
+<return>
+<value>${customer_name}</value>
+<status status="PASS" start="2024-06-04T15:33:12.867199" elapsed="0.000000"/>
+</return>
+<msg time="2024-06-04T15:33:12.867199" level="INFO">${customer_name} = INFOSYS LIMITED</msg>
+<var>${customer_name}</var>
+<doc>Reads customer name from CSV file</doc>
+<status status="PASS" start="2024-06-04T15:33:12.861099" elapsed="0.006100"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:12.869813" level="INFO">Typing text 'INFOSYS LIMITED' into text field '//input[@id='searchText']'.</msg>
+<arg>${SEARCH BAR}</arg>
+<arg>${customer_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:33:12.867199" elapsed="0.311952"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCHED ITEM}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-04T15:33:13.179151" elapsed="12.516273"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:33:30.695591" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:33:25.695424" elapsed="5.000167"/>
+</kw>
+<kw name="Click on Searched Customer name in search list" owner="GenralKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:30.695591" level="INFO">Clicking element '(//div[@class='d-flex align-items-center'])[1]'.</msg>
+<msg time="2024-06-04T15:33:50.004821" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:33:50.004821" level="FAIL">Element with locator '(//div[@class='d-flex align-items-center'])[1]' not found.</msg>
+<arg>${SEARCHED ITEM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:33:30.695591" elapsed="19.327070">Element with locator '(//div[@class='d-flex align-items-center'])[1]' not found.</status>
+</kw>
+<doc>Click on Searched Customer name in search list</doc>
+<status status="FAIL" start="2024-06-04T15:33:30.695591" elapsed="19.327070">Element with locator '(//div[@class='d-flex align-items-center'])[1]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:50.022661" elapsed="0.000000"/>
+</kw>
+<doc>Login to the application and search customer name</doc>
+<status status="FAIL" start="2024-06-04T15:32:09.192587" elapsed="100.830074">Element with locator '(//div[@class='d-flex align-items-center'])[1]' not found.</status>
+</kw>
+<kw name="Click Relationships Link" owner="RelationshipsPage">
+<doc>Clicks on the Relationships link</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:50.022661" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:50.022661" elapsed="0.000000"/>
+</kw>
+<kw name="Log Active Signatories table data to console" owner="RelationshipsPage">
+<doc>Log Active Signatories table data to the console</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:50.022661" elapsed="0.000000"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<arg>${Inactive_Signatories}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:50.022661" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:50.022661" elapsed="0.000000"/>
+</kw>
+<kw name="Click on Inactive button" owner="RelationshipsPage">
+<doc>Click on Inactive button to view InActive Signatories</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:50.027714" elapsed="0.000000"/>
+</kw>
+<kw name="Log InActive Signatories table data to console" owner="RelationshipsPage">
+<doc>Log InActive Signatories table data to console</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:50.027714" elapsed="0.000000"/>
+</kw>
+<doc>TC-1 Test the Signatories in Relationships page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:32:08.920281" elapsed="101.107433">Element with locator '(//div[@class='d-flex align-items-center'])[1]' not found.</status>
+</test>
+<test id="s1-s1-s1-t2" name="Verifying Auditors in Relationships page" line="28">
+<kw name="Click on Auditos Tab" owner="RelationshipsPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:50.029734" level="INFO">Clicking element '//div[text()='Auditors']'.</msg>
+<msg time="2024-06-04T15:33:54.375017" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:33:54.375017" level="FAIL">Element with locator '//div[text()='Auditors']' not found.</msg>
+<arg>${Auditors}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:33:50.029734" elapsed="4.345283">Element with locator '//div[text()='Auditors']' not found.</status>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${auditors_table_data}</var>
+<arg>${Auditors_Table}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:54.380031" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>AuditorsTable_Data:</arg>
+<arg>${auditors_table_data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:54.380031" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-04T15:33:50.029734" elapsed="4.350297">Element with locator '//div[text()='Auditors']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:54.380031" elapsed="0.000000"/>
+</kw>
+<doc>TC-2 Test Auditors in Relationships page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:33:50.027714" elapsed="4.352317">Element with locator '//div[text()='Auditors']' not found.</status>
+</test>
+<test id="s1-s1-s1-t3" name="Verifying Promoter Shareholding in Shareholding in Relationships page" line="34">
+<kw name="Click on Shareholding Tab" owner="RelationshipsPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:54.385545" level="INFO">Clicking element '//div[text()='Shareholding']'.</msg>
+<msg time="2024-06-04T15:33:59.844285" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:33:59.844285" level="FAIL">Element with locator '//div[text()='Shareholding']' not found.</msg>
+<arg>${Shareholding}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:33:54.385545" elapsed="5.467747">Element with locator '//div[text()='Shareholding']' not found.</status>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${promoter_shareholding}</var>
+<arg>${Table_Data}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:59.857980" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>PromoterShareholding_Data:</arg>
+<arg>${promoter_shareholding}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:59.857980" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-04T15:33:54.385545" elapsed="5.472435">Element with locator '//div[text()='Shareholding']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:33:59.857980" elapsed="0.000000"/>
+</kw>
+<doc>TC-3 Test Promoter Shareholding in Shareholding in Relationships page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:33:54.380031" elapsed="5.477949">Element with locator '//div[text()='Shareholding']' not found.</status>
+</test>
+<test id="s1-s1-s1-t4" name="Verifying Non Promoter Shareholding in Shareholding in Relationships page" line="40">
+<kw name="Click on Non Promoter Shareholding Tab" owner="RelationshipsPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:33:59.892432" level="INFO">Clicking element '//div[contains(text(),'Non Promoter Shareholding')]'.</msg>
+<msg time="2024-06-04T15:34:04.341806" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:34:04.341806" level="FAIL">Element with locator '//div[contains(text(),'Non Promoter Shareholding')]' not found.</msg>
+<arg>${NonPromoterShareholding}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:33:59.892432" elapsed="4.450962">Element with locator '//div[contains(text(),'Non Promoter Shareholding')]' not found.</status>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${non_promoter_shareholding}</var>
+<arg>${TABLE_DATA}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:34:04.343394" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>NonPromoterShareholding_Data:</arg>
+<arg>${non_promoter_shareholding}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-06-04T15:34:04.343394" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-04T15:33:59.879138" elapsed="4.469272">Element with locator '//div[contains(text(),'Non Promoter Shareholding')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:34:04.349957" elapsed="0.000000"/>
+</kw>
+<doc>TC-4 Test Non Promoter Shareholding in Shareholding in Relationships page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:33:59.862494" elapsed="4.489233">Element with locator '//div[contains(text(),'Non Promoter Shareholding')]' not found.</status>
+</test>
+<test id="s1-s1-s1-t5" name="Verifying KMP Shareholding in Shareholding in Relationships page" line="46">
+<kw name="Click on KMP Shareholding Tab" owner="RelationshipsPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:34:04.355093" level="INFO">Clicking element '//div[contains(text(),'KMP Shareholding')]'.</msg>
+<msg time="2024-06-04T15:34:19.136147" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:34:19.136147" level="FAIL">Element with locator '//div[contains(text(),'KMP Shareholding')]' not found.</msg>
+<arg>${KMP_Shareholding}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:34:04.355093" elapsed="14.781054">Element with locator '//div[contains(text(),'KMP Shareholding')]' not found.</status>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${kmp_shareholding}</var>
+<arg>${TABLE_DATA}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:34:19.136147" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>KMP_Shareholding_Data:</arg>
+<arg>${kmp_shareholding}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-06-04T15:34:19.136147" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-04T15:34:04.353659" elapsed="14.782488">Element with locator '//div[contains(text(),'KMP Shareholding')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:34:19.136147" elapsed="0.000000"/>
+</kw>
+<doc>TC-5 Test KMP Shareholding in Shareholding in Relationships page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:34:04.351727" elapsed="14.784420">Element with locator '//div[contains(text(),'KMP Shareholding')]' not found.</status>
+</test>
+<test id="s1-s1-s1-t6" name="Verifying Group structure in Relationships page" line="53">
+<kw name="Click on Group structure Tab" owner="RelationshipsPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:34:19.136147" level="INFO">Clicking element '//div[contains(text(),'Group structure')]'.</msg>
+<msg time="2024-06-04T15:34:33.400012" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:34:33.400012" level="FAIL">Element with locator '//div[contains(text(),'Group structure')]' not found.</msg>
+<arg>${Group_Structure}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:34:19.136147" elapsed="14.263865">Element with locator '//div[contains(text(),'Group structure')]' not found.</status>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${group_structure}</var>
+<arg>${Group_Structure_Table}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:34:33.405616" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Group_StructureData:</arg>
+<arg>${group_structure}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-06-04T15:34:33.405616" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-04T15:34:19.136147" elapsed="14.269469">Element with locator '//div[contains(text(),'Group structure')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:34:33.407131" elapsed="0.001053"/>
+</kw>
+<doc>TC-6 Test Group structure in Relationships page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:34:19.136147" elapsed="14.272037">Element with locator '//div[contains(text(),'Group structure')]' not found.</status>
+</test>
+<status status="FAIL" start="2024-06-04T15:32:02.295818" elapsed="151.112366"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:32:02.290758" elapsed="151.125923"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:32:02.248103" elapsed="151.168578"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="6" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="TestSuites">TestSuites</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1" name="TS4 Relationships">TestSuites.TS4 Relationships</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1-s1" name="TC4 RELATIONSHIPS">TestSuites.TS4 Relationships.TC4 RELATIONSHIPS</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

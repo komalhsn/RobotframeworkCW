@@ -66,7 +66,8 @@ Open Browser and Login
     maximize browser window
     Click Login Button
     sleep    2s
-    SignIn to the Application   credibot@ktkbank.com     Credi!123
+    SignIn to the Application    credibot@ktkbank.com       Credi!123
+#    SignIn to the Application   credibot@crediwatch.com     Credi!123
     Click Signin Button
     set selenium implicit wait    4S
 
@@ -127,3 +128,8 @@ Select From Dropdown
         ${label}=    Get Text    ${option}
         Run Keyword If    '${partial_label}' in '${label}'    Select From List by Label    ${locator}    ${label}
     END
+
+Scroll Down
+    mouse down    xpath://div[@class='ps__thumb-y']
+    Press Keys    NONE    ‘\ue00f’
+    Press Keys    NONE    PAGE_DOWN

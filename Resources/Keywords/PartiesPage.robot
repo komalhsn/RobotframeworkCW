@@ -20,7 +20,7 @@ Click on Parties on LHS in features list of dashboard
     sleep    5s
 
 Click on Export button
-    click button    ${ExportBtn}
+    click element    ${ExportBtn}
 
 Click on collaborators icon and get the details
     mouse over    ${CollaboratorsIcon}

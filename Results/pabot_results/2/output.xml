@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T15:27:27.423575" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuites" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites">
+<suite id="s1-s1" name="TS11 EPFO" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS11_EPFO">
+<suite id="s1-s1-s1" name="TC11 EPFO" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS11_EPFO\TC11_EPFO.robot">
+<test id="s1-s1-s1-t1" name="Verifying EPFO page" line="11">
+<kw name="Login to the application and search customer name" owner="GenralKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:27:28.130391" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-04T15:27:28.130391" elapsed="26.611568"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-04T15:27:54.741959" elapsed="0.400647"/>
+</kw>
+<kw name="Click Login Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:27:55.142606" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:27:55.142606" elapsed="4.810310"/>
+</kw>
+<doc>Clicks on the login button</doc>
+<status status="PASS" start="2024-06-04T15:27:55.142606" elapsed="4.811659"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:28:01.956193" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:27:59.954690" elapsed="2.001503"/>
+</kw>
+<kw name="SignIn to the Application" owner="GenralKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:01.958040" level="INFO">Typing text 'credibot@ktkbank.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:01.957722" elapsed="1.884146"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:03.848912" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:03.841868" elapsed="0.380395"/>
+</kw>
+<arg>credibot@ktkbank.com</arg>
+<arg>Credi!123</arg>
+<doc>Signs in using provided username and password</doc>
+<status status="PASS" start="2024-06-04T15:28:01.956193" elapsed="2.266070"/>
+</kw>
+<kw name="Click Signin Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:04.224618" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:04.223408" elapsed="3.424587"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:28:04.223408" elapsed="3.424587"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4S</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-04T15:28:07.647995" elapsed="0.000000"/>
+</kw>
+<kw name="Click Search Bar" owner="GenralKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:07.656015" level="INFO">Clicking element '//input[@id='searchText']'.</msg>
+<arg>${SEARCH BAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:07.656015" elapsed="3.978575"/>
+</kw>
+<doc>Clicks on the search bar</doc>
+<status status="PASS" start="2024-06-04T15:28:07.647995" elapsed="3.986595"/>
+</kw>
+<kw name="Read Customer Name From CSV" owner="GenralKeywords">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:28:11.646248" level="INFO">${data} = [{'customername': 'INFOSYS LIMITED'}, {'customername': 'COFFEE DAY ENTERPRISES LIMITED'}, {'customername': 'PIRAMAL ENTERPRISES LIMITED'}, {'customername': 'JSW CEMENT LIMITED'}, {'customername': 'ADA...</msg>
+<var>${data}</var>
+<arg>${parties_csvfile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.634590" elapsed="0.011658"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:28:11.646942" level="INFO">${customer_name} = INFOSYS LIMITED</msg>
+<var>${customer_name}</var>
+<arg>${data[0]['customername']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.646248" elapsed="0.000694"/>
+</kw>
+<return>
+<value>${customer_name}</value>
+<status status="PASS" start="2024-06-04T15:28:11.646942" elapsed="0.000000"/>
+</return>
+<msg time="2024-06-04T15:28:11.646942" level="INFO">${customer_name} = INFOSYS LIMITED</msg>
+<var>${customer_name}</var>
+<doc>Reads customer name from CSV file</doc>
+<status status="PASS" start="2024-06-04T15:28:11.634590" elapsed="0.012352"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:11.646942" level="INFO">Typing text 'INFOSYS LIMITED' into text field '//input[@id='searchText']'.</msg>
+<arg>${SEARCH BAR}</arg>
+<arg>${customer_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:28:11.646942" elapsed="0.785816"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:34.076628" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:28:34.076628" level="FAIL">Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.</msg>
+<arg>${SEARCHED ITEM}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-04T15:28:12.432758" elapsed="21.643870">Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:28:34.076628" elapsed="0.000000"/>
+</kw>
+<kw name="Click on Searched Customer name in search list" owner="GenralKeywords">
+<doc>Click on Searched Customer name in search list</doc>
+<status status="NOT RUN" start="2024-06-04T15:28:34.076628" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:28:34.076628" elapsed="0.000000"/>
+</kw>
+<doc>Login to the application and search customer name</doc>
+<status status="FAIL" start="2024-06-04T15:27:28.128143" elapsed="65.948485">Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Scroll menu bar down" owner="GenralKeywords">
+<status status="NOT RUN" start="2024-06-04T15:28:34.085644" elapsed="0.000069"/>
+</kw>
+<kw name="Click EPFO Link" owner="EPFOPage">
+<doc>Clicks on the EPFO link</doc>
+<status status="NOT RUN" start="2024-06-04T15:28:34.085713" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:28:34.087732" elapsed="0.010000"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<arg>epfo</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:28:34.097732" elapsed="0.000000"/>
+</kw>
+<doc>TC-1 Test the EPFO page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:27:28.125814" elapsed="65.971918">Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2024-06-04T15:27:27.514990" elapsed="66.582742"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:27:27.510505" elapsed="66.587227"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:27:27.481275" elapsed="66.616457"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestSuites">TestSuites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TS11 EPFO">TestSuites.TS11 EPFO</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TC11 EPFO">TestSuites.TS11 EPFO.TC11 EPFO</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

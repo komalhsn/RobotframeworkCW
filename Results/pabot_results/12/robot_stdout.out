@@ -1,0 +1,20 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS3 Registrations                                                  
+==============================================================================
+TestSuites.TS3 Registrations.TC3 REGISTRATIONS                                
+==============================================================================
+Verifying Registrations page :: TC-1 Test the Registrations page      Table Data: 
+| PASS |
+------------------------------------------------------------------------------
+TestSuites.TS3 Registrations.TC3 REGISTRATIONS                        | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+TestSuites.TS3 Registrations                                          | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+TestSuites                                                            | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\12\output.xml

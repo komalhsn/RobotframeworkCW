@@ -1,0 +1,49 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS13 Ratings                                                       
+==============================================================================
+TestSuites.TS13 Ratings.TC13 Ratings                                          
+==============================================================================
+Verify Ratings Page :: TC-1 Test Ratings page                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS13_Ratings\TC13_Ratings.robot:11
+    T:  Verify Ratings Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS13_Ratings\TC13_Ratings.robot:14
+      Login to the application and search customer name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\CommonKeywords\GenralKeywords.robot:107
+      Wait Until Element Is Visible    ${SEARCHED ITEM}
+      |  ${SEARCHED ITEM} = (//div[@class='d-flex align-items-center'])[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+Validate if user is able to click on view icon to view Rating Hist...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS13_Ratings\TC13_Ratings.robot:21
+    T:  Validate if user is able to click on view icon to view Rating History    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS13_Ratings\TC13_Ratings.robot:24
+      Click on view icon    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\Ratings.robot:20
+      Click Element    ${View}
+      |  ${View} = //div[@class='cursor-pointer'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//div[@class='cursor-pointer']' not found.
+------------------------------------------------------------------------------
+TestSuites.TS13 Ratings.TC13 Ratings                                  | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+TestSuites.TS13 Ratings                                               | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\4\output.xml

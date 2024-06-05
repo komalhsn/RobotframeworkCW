@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T15:28:39.214463" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuites" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites">
+<suite id="s1-s1" name="TS15 Cases" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS15_Cases">
+<suite id="s1-s1-s1" name="TC15 Cases" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS15_Cases\TC15_Cases.robot">
+<test id="s1-s1-s1-t1" name="Verify Cases page" line="11">
+<kw name="Login to the application and search customer name" owner="GenralKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:28:47.762552" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-04T15:28:47.761504" elapsed="14.468163"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-04T15:29:02.231725" elapsed="21.546157"/>
+</kw>
+<kw name="Click Login Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:23.786350" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:23.782713" elapsed="0.992079"/>
+</kw>
+<doc>Clicks on the login button</doc>
+<status status="PASS" start="2024-06-04T15:29:23.780357" elapsed="0.994435"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:29:26.776098" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:29:24.775906" elapsed="2.000192"/>
+</kw>
+<kw name="SignIn to the Application" owner="GenralKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:26.778454" level="INFO">Typing text 'credibot@ktkbank.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:26.777446" elapsed="0.258050"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:27.036665" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:27.035496" elapsed="0.313174"/>
+</kw>
+<arg>credibot@ktkbank.com</arg>
+<arg>Credi!123</arg>
+<doc>Signs in using provided username and password</doc>
+<status status="PASS" start="2024-06-04T15:29:26.776098" elapsed="0.572572"/>
+</kw>
+<kw name="Click Signin Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:27.351223" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:27.350338" elapsed="1.790386"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:29:27.350269" elapsed="1.791628"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4S</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-04T15:29:29.141897" elapsed="0.003313"/>
+</kw>
+<kw name="Click Search Bar" owner="GenralKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:29.147964" level="INFO">Clicking element '//input[@id='searchText']'.</msg>
+<arg>${SEARCH BAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:29.147964" elapsed="5.336493"/>
+</kw>
+<doc>Clicks on the search bar</doc>
+<status status="PASS" start="2024-06-04T15:29:29.146822" elapsed="5.337635"/>
+</kw>
+<kw name="Read Customer Name From CSV" owner="GenralKeywords">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:29:34.484457" level="INFO">${data} = [{'customername': 'INFOSYS LIMITED'}, {'customername': 'COFFEE DAY ENTERPRISES LIMITED'}, {'customername': 'PIRAMAL ENTERPRISES LIMITED'}, {'customername': 'JSW CEMENT LIMITED'}, {'customername': 'ADA...</msg>
+<var>${data}</var>
+<arg>${parties_csvfile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:29:34.484457" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:29:34.492475" level="INFO">${customer_name} = INFOSYS LIMITED</msg>
+<var>${customer_name}</var>
+<arg>${data[0]['customername']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:29:34.492475" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${customer_name}</value>
+<status status="PASS" start="2024-06-04T15:29:34.492475" elapsed="0.000000"/>
+</return>
+<msg time="2024-06-04T15:29:34.492475" level="INFO">${customer_name} = INFOSYS LIMITED</msg>
+<var>${customer_name}</var>
+<doc>Reads customer name from CSV file</doc>
+<status status="PASS" start="2024-06-04T15:29:34.484457" elapsed="0.008018"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:34.492475" level="INFO">Typing text 'INFOSYS LIMITED' into text field '//input[@id='searchText']'.</msg>
+<arg>${SEARCH BAR}</arg>
+<arg>${customer_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:34.492475" elapsed="1.810609"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCHED ITEM}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-04T15:29:36.304063" elapsed="1.095328"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:29:42.399509" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:29:37.399391" elapsed="5.000118"/>
+</kw>
+<kw name="Click on Searched Customer name in search list" owner="GenralKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:42.402472" level="INFO">Clicking element '(//div[@class='d-flex align-items-center'])[1]'.</msg>
+<arg>${SEARCHED ITEM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:42.401954" elapsed="0.255210"/>
+</kw>
+<doc>Click on Searched Customer name in search list</doc>
+<status status="PASS" start="2024-06-04T15:29:42.400742" elapsed="0.256422"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:29:45.662313" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:29:42.658170" elapsed="3.004143"/>
+</kw>
+<doc>Login to the application and search customer name</doc>
+<status status="PASS" start="2024-06-04T15:28:47.255037" elapsed="58.407276"/>
+</kw>
+<kw name="Click on Cases" owner="CasesPage">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:45.667014" level="INFO">Clicking link '//a[text()='Cases']'.</msg>
+<arg>${Case_Link}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:29:45.665365" elapsed="0.374785"/>
+</kw>
+<doc>Click on Cases</doc>
+<status status="PASS" start="2024-06-04T15:29:45.662313" elapsed="0.378841"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:46.066150" level="INFO">Current location contains 'cases'.</msg>
+<arg>cases</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2024-06-04T15:29:46.041283" elapsed="0.024867"/>
+</kw>
+<doc>TC-1 Test Cases page</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:28:47.240951" elapsed="58.826357"/>
+</test>
+<status status="PASS" start="2024-06-04T15:28:39.289960" elapsed="66.777348"/>
+</suite>
+<status status="PASS" start="2024-06-04T15:28:39.289960" elapsed="66.778766"/>
+</suite>
+<status status="PASS" start="2024-06-04T15:28:39.263386" elapsed="66.806571"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestSuites">TestSuites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TS15 Cases">TestSuites.TS15 Cases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC15 Cases">TestSuites.TS15 Cases.TC15 Cases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

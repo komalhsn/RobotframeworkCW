@@ -1,0 +1,38 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS1 Signin                                                         
+==============================================================================
+TestSuites.TS1 Signin.TC1 SIGNIN                                              
+==============================================================================
+SignIn With Invalid Username and Invalid Password From CSV :: TC-1... Signin
+| PASS |
+------------------------------------------------------------------------------
+SignIn With Only Valid Password From CSV :: TC-2 Test the sign-in ... Signin
+| PASS |
+------------------------------------------------------------------------------
+SignIn With Only Valid Username From CSV :: TC-3 Test the sign-in ... Signin
+| PASS |
+------------------------------------------------------------------------------
+SignIn With Valid Username and Invalid Password From CSV :: TC-4 T... Signin
+| PASS |
+------------------------------------------------------------------------------
+SignIn With Invalid Username and Valid Password From CSV :: TC-5 T... Signin
+| PASS |
+------------------------------------------------------------------------------
+SignIn With blank Username and blank Password From CSV :: TC-6 Tes... Signin
+| PASS |
+------------------------------------------------------------------------------
+SignIn With Valid Username and Valid Password From CSV :: TC-7 Tes... App - Crediwatch
+| PASS |
+------------------------------------------------------------------------------
+TestSuites.TS1 Signin.TC1 SIGNIN                                      | PASS |
+7 tests, 7 passed, 0 failed
+==============================================================================
+TestSuites.TS1 Signin                                                 | PASS |
+7 tests, 7 passed, 0 failed
+==============================================================================
+TestSuites                                                            | PASS |
+7 tests, 7 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\0\output.xml

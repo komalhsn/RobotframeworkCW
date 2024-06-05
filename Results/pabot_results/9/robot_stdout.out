@@ -1,0 +1,25 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS18 Portfolio                                                     
+==============================================================================
+TestSuites.TS18 Portfolio.TC18.1 AddParties                                   
+==============================================================================
+Verify user should not able to create the portfolio with the exist... | PASS |
+------------------------------------------------------------------------------
+Verify that user can add parties to the newly created portfolio an... | PASS |
+------------------------------------------------------------------------------
+Verify that user can add parties to the newly created portfolio ::... | PASS |
+------------------------------------------------------------------------------
+Verify if user can click on Alert Tab to view alert details :: TC-... | PASS |
+------------------------------------------------------------------------------
+TestSuites.TS18 Portfolio.TC18.1 AddParties                           | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+TestSuites.TS18 Portfolio                                             | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+TestSuites                                                            | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\9\output.xml

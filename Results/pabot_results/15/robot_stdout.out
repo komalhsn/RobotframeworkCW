@@ -1,0 +1,49 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS6 Charges                                                        
+==============================================================================
+TestSuites.TS6 Charges.TC6 CHARGES                                            
+==============================================================================
+Verifying Charges page :: TC-1 Test the Active Charges page             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS6_Charges\TC6_CHARGES.robot:13
+    T:  Verifying Charges page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS6_Charges\TC6_CHARGES.robot:18
+      Click Charges Link    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\ChargesPage.robot:17
+      Click Link    ${Charges LINK}
+      |  ${Charges LINK} = //a[text()='Charges'] (str)
+______________________________________________________________________________
+| FAIL |
+Link with locator '//a[text()='Charges']' not found.
+------------------------------------------------------------------------------
+Verifying Satisfied Charges :: TC-2 Test the Satisfied Charges          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS6_Charges\TC6_CHARGES.robot:24
+    T:  Verifying Satisfied Charges    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS6_Charges\TC6_CHARGES.robot:28
+      Click on Satisfied Charges Tab    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\ChargesPage.robot:25
+      Click Element    ${SatisfiedCharges}
+      |  ${SatisfiedCharges} = //a[contains(text(),'Satisfied Charges')] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//a[contains(text(),'Satisfied Charges')]' not found.
+------------------------------------------------------------------------------
+TestSuites.TS6 Charges.TC6 CHARGES                                    | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+TestSuites.TS6 Charges                                                | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\15\output.xml

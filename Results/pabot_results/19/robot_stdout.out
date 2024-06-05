@@ -1,0 +1,43 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS15 Cases                                                         
+==============================================================================
+TestSuites.TS15 Cases.TC15.1 ManualCases                                      
+==============================================================================
+Verify Export button :: TC-1 Test Export feature                      | PASS |
+------------------------------------------------------------------------------
+Verify if user can cancele creating Manual Cases :: TC-2 Test if u... | PASS |
+------------------------------------------------------------------------------
+Verify if user can create Manual Cases :: TC- 3 Test if user can c... | PASS |
+------------------------------------------------------------------------------
+Verify if user can cancel case edit :: TC-4 Test if user can cance... | PASS |
+------------------------------------------------------------------------------
+Verify if user can edit case :: TC-5 Test if user can edit case       | PASS |
+------------------------------------------------------------------------------
+Verify if user can post the comment :: TC-7 Test if user can post ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS15_Cases\TC15.1_ManualCases.robot:68
+    T:  Verify if user can post the comment    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS15_Cases\TC15.1_ManualCases.robot:72
+      Click on Comment Post button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\CasesPage.robot:106
+      Click Button    ${CommentPost}
+      |  ${CommentPost} = //button[contains(text(),'Post')] (str)
+______________________________________________________________________________
+| FAIL |
+Button with locator '//button[contains(text(),'Post')]' not found.
+------------------------------------------------------------------------------
+TestSuites.TS15 Cases.TC15.1 ManualCases                              | FAIL |
+6 tests, 5 passed, 1 failed
+==============================================================================
+TestSuites.TS15 Cases                                                 | FAIL |
+6 tests, 5 passed, 1 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+6 tests, 5 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\19\output.xml

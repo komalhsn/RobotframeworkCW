@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T15:30:40.790445" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuites" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites">
+<suite id="s1-s1" name="TS2 Highlights" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS2_Highlights">
+<suite id="s1-s1-s1" name="TC2 HIGHLIGHTS" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS2_Highlights\TC2_HIGHLIGHTS.robot">
+<test id="s1-s1-s1-t1" name="Verifying Highlights page" line="11">
+<kw name="Login to the application and search customer name" owner="GenralKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:41.326412" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-04T15:30:41.326412" elapsed="39.568018"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-04T15:31:20.894430" elapsed="0.158635"/>
+</kw>
+<kw name="Click Login Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:21.055764" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:21.055764" elapsed="14.188115"/>
+</kw>
+<doc>Clicks on the login button</doc>
+<status status="PASS" start="2024-06-04T15:31:21.055334" elapsed="14.188886"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:31:37.244380" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:31:35.244220" elapsed="2.000160"/>
+</kw>
+<kw name="SignIn to the Application" owner="GenralKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:37.247428" level="INFO">Typing text 'credibot@ktkbank.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:37.244380" elapsed="0.329659"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:37.579651" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:37.579565" elapsed="0.229451"/>
+</kw>
+<arg>credibot@ktkbank.com</arg>
+<arg>Credi!123</arg>
+<doc>Signs in using provided username and password</doc>
+<status status="PASS" start="2024-06-04T15:31:37.244380" elapsed="0.564636"/>
+</kw>
+<kw name="Click Signin Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:37.811103" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:37.811103" elapsed="13.199996"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:31:37.809016" elapsed="13.202083"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4S</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-04T15:31:51.011099" elapsed="0.000000"/>
+</kw>
+<kw name="Click Search Bar" owner="GenralKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:51.019122" level="INFO">Clicking element '//input[@id='searchText']'.</msg>
+<arg>${SEARCH BAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:51.019122" elapsed="2.909116"/>
+</kw>
+<doc>Clicks on the search bar</doc>
+<status status="PASS" start="2024-06-04T15:31:51.011099" elapsed="2.917139"/>
+</kw>
+<kw name="Read Customer Name From CSV" owner="GenralKeywords">
+<kw name="Read Csv File To Associative" owner="CSVLibrary">
+<msg time="2024-06-04T15:31:53.939368" level="INFO">${data} = [{'customername': 'INFOSYS LIMITED'}, {'customername': 'COFFEE DAY ENTERPRISES LIMITED'}, {'customername': 'PIRAMAL ENTERPRISES LIMITED'}, {'customername': 'JSW CEMENT LIMITED'}, {'customername': 'ADA...</msg>
+<var>${data}</var>
+<arg>${parties_csvfile}</arg>
+<doc>Read CSV file and return its content as a Python list of dictionaries.</doc>
+<status status="PASS" start="2024-06-04T15:31:53.928238" elapsed="0.011130"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-04T15:31:53.941768" level="INFO">${customer_name} = INFOSYS LIMITED</msg>
+<var>${customer_name}</var>
+<arg>${data[0]['customername']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-04T15:31:53.939368" elapsed="0.002400"/>
+</kw>
+<return>
+<value>${customer_name}</value>
+<status status="PASS" start="2024-06-04T15:31:53.941768" elapsed="0.000000"/>
+</return>
+<msg time="2024-06-04T15:31:53.941768" level="INFO">${customer_name} = INFOSYS LIMITED</msg>
+<var>${customer_name}</var>
+<doc>Reads customer name from CSV file</doc>
+<status status="PASS" start="2024-06-04T15:31:53.928238" elapsed="0.013530"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:53.941768" level="INFO">Typing text 'INFOSYS LIMITED' into text field '//input[@id='searchText']'.</msg>
+<arg>${SEARCH BAR}</arg>
+<arg>${customer_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:31:53.941768" elapsed="0.200889"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:06.635884" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:32:06.641114" level="FAIL">Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.</msg>
+<arg>${SEARCHED ITEM}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-04T15:31:54.142657" elapsed="12.564805">Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:06.712021" elapsed="0.010824"/>
+</kw>
+<kw name="Click on Searched Customer name in search list" owner="GenralKeywords">
+<doc>Click on Searched Customer name in search list</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:06.925570" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:06.925570" elapsed="0.005939"/>
+</kw>
+<doc>Login to the application and search customer name</doc>
+<status status="FAIL" start="2024-06-04T15:30:41.324201" elapsed="85.611389">Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PAGE_TITLE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:06.935590" elapsed="0.000000"/>
+</kw>
+<kw name="Log Highlights table data to console" owner="HighlightsPage">
+<doc>Log Highlights table data to the console</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:06.942293" elapsed="0.000000"/>
+</kw>
+<doc>TC-1 Test the highlights page by searchng customer name from a CSV file</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:30:41.323094" elapsed="85.629616">Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s1-s1-t2" name="Verify Business Activity table" line="20">
+<kw name="Log Business Activity of the company on console" owner="HighlightsPage">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:15.520754" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:32:15.520754" level="FAIL">Element with locator '//table[@class='table table-sm mb-0 table-bordered table-striped']' not found.</msg>
+<var>${BA_table_data}</var>
+<arg>${Business_Activity}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:32:07.686113" elapsed="7.834641">Element with locator '//table[@class='table table-sm mb-0 table-bordered table-striped']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:15.520754" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Business Activity Data:</arg>
+<arg>${BA_table_data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:15.527767" elapsed="0.000120"/>
+</kw>
+<doc>Log Business Activity of the company on console</doc>
+<status status="FAIL" start="2024-06-04T15:32:07.677957" elapsed="7.849930">Element with locator '//table[@class='table table-sm mb-0 table-bordered table-striped']' not found.</status>
+</kw>
+<doc>TC-2 Test Business Activity table on highlights page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:32:06.963025" elapsed="8.564862">Element with locator '//table[@class='table table-sm mb-0 table-bordered table-striped']' not found.</status>
+</test>
+<test id="s1-s1-s1-t3" name="Verify Alert Count tab" line="25">
+<kw name="Click Alert Count tab Verify Navigation" owner="HighlightsPage">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:32:21.053020" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:32:15.553013" elapsed="5.500007"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:21.061159" level="INFO">Clicking element '//div[contains(text(),'Order Reports')]'.</msg>
+<msg time="2024-06-04T15:32:29.341468" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:32:29.341468" level="FAIL">Element with locator '//div[contains(text(),'Order Reports')]' not found.</msg>
+<arg>//div[contains(text(),'Order Reports')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:32:21.053020" elapsed="8.328064">Element with locator '//div[contains(text(),'Order Reports')]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${AlertCountTab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:29.381084" elapsed="0.000000"/>
+</kw>
+<doc>Click on Alert Count tab and page should navigate to Alert Page of the searched Party</doc>
+<status status="FAIL" start="2024-06-04T15:32:15.553013" elapsed="13.828071">Element with locator '//div[contains(text(),'Order Reports')]' not found.</status>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<arg>alerts</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:29.381084" elapsed="0.000000"/>
+</kw>
+<doc>TC-3 Click on Alert Count tab and page should navigate to Alert Page of the searched Party</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:32:15.544963" elapsed="13.836121">Element with locator '//div[contains(text(),'Order Reports')]' not found.</status>
+</test>
+<test id="s1-s1-s1-t4" name="Verify Cases Tab" line="31">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:32:32.390543" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:32:29.389096" elapsed="3.001447"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2024-06-04T15:32:32.390543" elapsed="0.192207"/>
+</kw>
+<kw name="Click Cases Tab And Verify Navigation" owner="HighlightsPage">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:32:37.587755" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:32:32.587353" elapsed="5.000402"/>
+</kw>
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<kw name="Scroll element into view" owner="GenralKeywords">
+<msg time="2024-06-04T15:32:38.035737" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:38.035737" elapsed="0.000000">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:38.035737" elapsed="0.377090">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:38.035737" elapsed="0.424799">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:38.032706" elapsed="0.435830">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:38.016466" elapsed="0.452070">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:38.016466" elapsed="0.452070">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:38.009413" elapsed="0.459123">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:38.009413" elapsed="0.472198">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:38.009413" elapsed="0.472198">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.999776" elapsed="0.484850">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.999776" elapsed="0.484850">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.999776" elapsed="0.484850">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.999776" elapsed="0.484850">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.999776" elapsed="0.484850">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.991323" elapsed="0.501326">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.991323" elapsed="0.501326">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.991323" elapsed="0.509672">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.986801" elapsed="0.522250">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.986801" elapsed="0.530305">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.986801" elapsed="0.530305">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.986801" elapsed="0.530305">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.986801" elapsed="0.530305">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.983194" elapsed="0.541929">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.983194" elapsed="0.541929">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.983194" elapsed="0.549936">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.981655" elapsed="0.551475">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.865930" elapsed="0.667200">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.865930" elapsed="0.676233">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.852924" elapsed="0.689239">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.844304" elapsed="0.700414">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.844304" elapsed="0.704979">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.844304" elapsed="0.704979">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.844304" elapsed="0.704979">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.842689" elapsed="0.706594">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.842689" elapsed="0.714618">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.842134" elapsed="0.715173">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.839568" elapsed="0.717739">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.839568" elapsed="0.719455">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.839568" elapsed="0.719455">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.839568" elapsed="0.719455">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.836043" elapsed="0.722980">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.820685" elapsed="0.738338">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.820685" elapsed="0.738338">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.820685" elapsed="0.738338">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.820685" elapsed="0.738338">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.789037" elapsed="0.776500">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.789037" elapsed="0.776500">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.789037" elapsed="0.776500">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.789037" elapsed="0.776500">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.788888" elapsed="0.780179">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.786871" elapsed="0.782196">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.781821" elapsed="0.787246">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.776831" elapsed="0.852904">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.765312" elapsed="0.864423">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.765312" elapsed="0.864423">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.765312" elapsed="0.864423">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.765312" elapsed="0.864423">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.765312" elapsed="0.864423">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.765312" elapsed="0.864423">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.643794" elapsed="0.985941">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.643794" elapsed="0.993961">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.641731" elapsed="0.996024">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.641731" elapsed="0.996024">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.638714" elapsed="0.999041">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.638714" elapsed="0.999041">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.638714" elapsed="0.999041">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.635630" elapsed="1.002125">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.635630" elapsed="1.002125">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.635630" elapsed="1.002125">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.635630" elapsed="1.002125">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.635630" elapsed="1.002125">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.634587" elapsed="1.007696">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.627570" elapsed="1.014713">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.627570" elapsed="1.014713">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.624545" elapsed="1.017738">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.624545" elapsed="1.019796">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.619497" elapsed="1.028964">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.619497" elapsed="1.028964">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.619497" elapsed="1.028964">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.619497" elapsed="1.028964">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.613980" elapsed="1.034481">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.613980" elapsed="1.034481">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.613980" elapsed="1.034481">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.613980" elapsed="1.034481">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.608410" elapsed="1.040051">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.608410" elapsed="1.040051">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.608410" elapsed="1.040051">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.603382" elapsed="1.045079">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.603382" elapsed="1.045079">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.603382" elapsed="1.045079">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.593809" elapsed="1.060167">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.593809" elapsed="1.060167">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.587755" elapsed="1.066221">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.587755" elapsed="1.066221">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.587755" elapsed="1.066221">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.587755" elapsed="1.066221">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.587755" elapsed="1.066221">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${element}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.587755" elapsed="1.066221">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${Cases_Tab}</arg>
+<status status="FAIL" start="2024-06-04T15:32:37.587755" elapsed="1.066221">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Cases_Tab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:38.653976" elapsed="0.000000"/>
+</kw>
+<doc>Click on Cases tab and page should navigate to cases page of the searched party</doc>
+<status status="FAIL" start="2024-06-04T15:32:32.587353" elapsed="6.066623">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<doc>TC-4 Click on Cases tab and page should navigate to cases page of the searched party</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:32:29.389096" elapsed="9.264880">Maximum limit of started keywords and control structures exceeded.</status>
+</test>
+<test id="s1-s1-s1-t5" name="Verify Products Order tab" line="39">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:32:41.677626" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:32:38.653976" elapsed="3.023650"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2024-06-04T15:32:41.677626" elapsed="0.580494"/>
+</kw>
+<kw name="Click Products Order tab And Verify Navigaton" owner="HighlightsPage">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:32:47.260533" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:32:42.259643" elapsed="5.089241"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:32:47.382921" level="INFO">Clicking element '//div[contains(text(),'Order Reports')]'.</msg>
+<msg time="2024-06-04T15:32:51.779993" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:32:51.779993" level="FAIL">Element with locator '//div[contains(text(),'Order Reports')]' not found.</msg>
+<arg>//div[contains(text(),'Order Reports')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:32:47.366721" elapsed="4.413272">Element with locator '//div[contains(text(),'Order Reports')]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ProductsOrder_Tab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:51.788015" elapsed="0.000000"/>
+</kw>
+<doc>Click on Products Order tab page should navigate to products page</doc>
+<status status="FAIL" start="2024-06-04T15:32:42.258120" elapsed="9.529895">Element with locator '//div[contains(text(),'Order Reports')]' not found.</status>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<arg>products</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:32:51.789155" elapsed="0.000000"/>
+</kw>
+<doc>TC-5 Click on Products Order tab page should navigate to products page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:32:38.653976" elapsed="13.135179">Element with locator '//div[contains(text(),'Order Reports')]' not found.</status>
+</test>
+<status status="FAIL" start="2024-06-04T15:30:40.912643" elapsed="130.878542"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:30:40.907525" elapsed="130.883660"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:30:40.868272" elapsed="130.928988"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="5" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="TestSuites">TestSuites</stat>
+<stat pass="0" fail="5" skip="0" id="s1-s1" name="TS2 Highlights">TestSuites.TS2 Highlights</stat>
+<stat pass="0" fail="5" skip="0" id="s1-s1-s1" name="TC2 HIGHLIGHTS">TestSuites.TS2 Highlights.TC2 HIGHLIGHTS</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

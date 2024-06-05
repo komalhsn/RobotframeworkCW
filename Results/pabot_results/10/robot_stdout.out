@@ -1,0 +1,33 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS19 Products                                                      
+==============================================================================
+TestSuites.TS19 Products.TC19 Products                                        
+==============================================================================
+Verify user can navigate to products page :: TC-1 Test if user can...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS19_Products\TC19_Products.robot:12
+    T:  Verify user can navigate to products page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS19_Products\TC19_Products.robot:17
+      Click on Products on LHS in features list of dashboard    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\ProductsPage.robot:16
+      Click Link    ${Products}
+      |  ${Products} = //a[text()='Products'] (str)
+______________________________________________________________________________
+| FAIL |
+Link with locator '//a[text()='Products']' not found.
+------------------------------------------------------------------------------
+TestSuites.TS19 Products.TC19 Products                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestSuites.TS19 Products                                              | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\10\output.xml

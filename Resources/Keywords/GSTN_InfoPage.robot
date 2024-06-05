@@ -18,5 +18,5 @@ Click GSTN Info Link
     sleep    10s
 
 Log GSTN Info data on console
-    ${gstninfo_data}=   get element attribute    ${GSTNInfoData}
+    ${gstninfo_data}=   get text    ${GSTNInfoData}
     log to console    GST INFO Data:    ${gstninfo_data}

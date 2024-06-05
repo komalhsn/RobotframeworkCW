@@ -1,0 +1,49 @@
+==============================================================================
+TestSuites                                                                    
+==============================================================================
+TestSuites.TS10 GstnInfo                                                      
+==============================================================================
+TestSuites.TS10 GstnInfo.TC10 GSTN INFO                                       
+==============================================================================
+Verifying GSTN Info page :: TC-1 Test the GSTN Info page                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS10_GstnInfo\TC10_GSTN_INFO.robot:11
+    T:  Verifying GSTN Info page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS10_GstnInfo\TC10_GSTN_INFO.robot:14
+      Login to the application and search customer name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\CommonKeywords\GenralKeywords.robot:107
+      Wait Until Element Is Visible    ${SEARCHED ITEM}
+      |  ${SEARCHED ITEM} = (//div[@class='d-flex align-items-center'])[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element '(//div[@class='d-flex align-items-center'])[1]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+Verify if user can log the GSTN Info Data on console :: TC-2 Test ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS10_GstnInfo\TC10_GSTN_INFO.robot:22
+    T:  Verify if user can log the GSTN Info Data on console    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS10_GstnInfo\TC10_GSTN_INFO.robot:26
+      Log GSTN Info data on console    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Resources\Keywords\GSTN_InfoPage.robot:21
+      Get Text    ${GSTNInfoData}
+      |  ${GSTNInfoData} = //div[@class='tab-pane active'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '//div[@class='tab-pane active']' not found.
+------------------------------------------------------------------------------
+TestSuites.TS10 GstnInfo.TC10 GSTN INFO                               | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+TestSuites.TS10 GstnInfo                                              | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+TestSuites                                                            | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\Results\pabot_results\1\output.xml

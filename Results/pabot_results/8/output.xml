@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T15:29:52.928701" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuites" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites">
+<suite id="s1-s1" name="TS18 Portfolio" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio">
+<suite id="s1-s1-s1" name="TC18 PORTFOLIOS" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS18_Portfolio\TC18_PORTFOLIOS.robot">
+<test id="s1-s1-s1-t1" name="Verify user can navigate to portfolios page" line="11">
+<kw name="Open Browser and Login" owner="GenralKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:29:53.816727" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-04T15:29:53.811677" elapsed="43.979652"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-04T15:30:37.791329" elapsed="0.603760"/>
+</kw>
+<kw name="Click Login Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:38.401645" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:38.395089" elapsed="4.198378"/>
+</kw>
+<doc>Clicks on the login button</doc>
+<status status="PASS" start="2024-06-04T15:30:38.395089" elapsed="4.198378"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:30:44.595026" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:30:42.593467" elapsed="2.001559"/>
+</kw>
+<kw name="SignIn to the Application" owner="GenralKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:44.597055" level="INFO">Typing text 'credibot@ktkbank.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:44.597055" elapsed="1.633343"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:46.231482" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:46.231482" elapsed="0.204920"/>
+</kw>
+<arg>credibot@ktkbank.com</arg>
+<arg>Credi!123</arg>
+<doc>Signs in using provided username and password</doc>
+<status status="PASS" start="2024-06-04T15:30:44.595026" elapsed="1.842459"/>
+</kw>
+<kw name="Click Signin Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:46.439072" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:30:46.439072" elapsed="3.466172"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:30:46.437625" elapsed="3.467619"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4S</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-04T15:30:49.905244" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:29:53.811677" elapsed="56.093567"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:30:54.906921" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:30:49.905244" elapsed="5.001677"/>
+</kw>
+<kw name="Click on Portfolios on LHS in features list of dashboard" owner="PortfoliosPage">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:54.906921" level="INFO">Clicking link '//a[text()='Portfolios']'.</msg>
+<msg time="2024-06-04T15:30:59.386541" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:30:59.386541" level="FAIL">Link with locator '//a[text()='Portfolios']' not found.</msg>
+<arg>${Portfolios}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:30:54.906921" elapsed="4.483134">Link with locator '//a[text()='Portfolios']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:30:59.390055" elapsed="0.000000"/>
+</kw>
+<doc>Click on Parties on LHS in features list of dashboard</doc>
+<status status="FAIL" start="2024-06-04T15:30:54.906921" elapsed="4.483134">Link with locator '//a[text()='Portfolios']' not found.</status>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<arg>portfolios</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:30:59.390055" elapsed="0.000000"/>
+</kw>
+<doc>TC-1 Test if user can click on portfolios and navigate to portfolios page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:29:53.811677" elapsed="65.578378">Link with locator '//a[text()='Portfolios']' not found.</status>
+</test>
+<test id="s1-s1-s1-t2" name="Verify if user can view the portfolio collaborators" line="20">
+<kw name="Click on collaborators icon and get the details" owner="PortfoliosPage">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:30:59.393574" level="INFO">Simulating Mouse Over on element '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[3]/i[1]'.</msg>
+<msg time="2024-06-04T15:31:03.945553" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:31:03.945553" level="FAIL">Element with locator '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[3]/i[1]' not found.</msg>
+<arg>${CollaboratorsIcon}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:30:59.393574" elapsed="4.551979">Element with locator '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[3]/i[1]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${CollaboratorsIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:03.945553" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${collaborators_list}</var>
+<arg>${Collaborators}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:03.945553" elapsed="0.008031"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>List of collaborators:</arg>
+<arg>${collaborators_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:03.953584" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:03.953584" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'×')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:03.953584" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-04T15:30:59.393574" elapsed="4.560010">Element with locator '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[3]/i[1]' not found.</status>
+</kw>
+<doc>TC-2 Test if user can view the portfolio collaborators</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:30:59.393574" elapsed="4.560010">Element with locator '//body/div[@id='root']/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[3]/i[1]' not found.</status>
+</test>
+<test id="s1-s1-s1-t3" name="Verify user can cancel while creating a portfolio" line="25">
+<kw name="Click on create portfolio button" owner="PortfoliosPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:03.969583" level="INFO">Clicking button '//button[contains(text(),'Create Portfolio')]'.</msg>
+<msg time="2024-06-04T15:31:20.689464" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:31:20.689464" level="FAIL">Button with locator '//button[contains(text(),'Create Portfolio')]' not found.</msg>
+<arg>${CreatePortfolioBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:31:03.961581" elapsed="16.727883">Button with locator '//button[contains(text(),'Create Portfolio')]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-04T15:31:03.953584" elapsed="16.743874">Button with locator '//button[contains(text(),'Create Portfolio')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:20.697458" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Portfolio Name and Description" owner="PortfoliosPage">
+<status status="NOT RUN" start="2024-06-04T15:31:20.697458" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:20.697458" elapsed="0.000000"/>
+</kw>
+<kw name="Click on Cancel Button" owner="PortfoliosPage">
+<status status="NOT RUN" start="2024-06-04T15:31:20.697458" elapsed="0.000000"/>
+</kw>
+<doc>TC-3 Test if user can cancel while creating a portfolio</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:31:03.953584" elapsed="16.743874">Button with locator '//button[contains(text(),'Create Portfolio')]' not found.</status>
+</test>
+<test id="s1-s1-s1-t4" name="Verify user can create portfolio" line="34">
+<try>
+<branch type="TRY">
+<kw name="Click on create portfolio button" owner="PortfoliosPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:20.697458" level="INFO">Clicking button '//button[contains(text(),'Create Portfolio')]'.</msg>
+<msg time="2024-06-04T15:31:34.042957" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:31:34.042957" level="FAIL">Button with locator '//button[contains(text(),'Create Portfolio')]' not found.</msg>
+<arg>${CreatePortfolioBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:31:20.697458" elapsed="13.345499">Button with locator '//button[contains(text(),'Create Portfolio')]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-04T15:31:20.697458" elapsed="13.345499">Button with locator '//button[contains(text(),'Create Portfolio')]' not found.</status>
+</kw>
+<kw name="Enter Portfolio Name and Description" owner="PortfoliosPage">
+<status status="NOT RUN" start="2024-06-04T15:31:34.042957" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:34.042957" elapsed="0.000000"/>
+</kw>
+<kw name="Click on Create Button" owner="PortfoliosPage">
+<status status="NOT RUN" start="2024-06-04T15:31:34.042957" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:34.042957" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-04T15:31:20.697458" elapsed="13.345499">Button with locator '//button[contains(text(),'Create Portfolio')]' not found.</status>
+</branch>
+<branch type="EXCEPT">
+<pattern>${ErrorMsg}</pattern>
+<kw name="Log" owner="BuiltIn">
+<arg>Exception occurred: ${ErrorMsg}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:34.053473" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-06-04T15:31:34.042957" elapsed="0.010516"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Close pop-up" owner="PortfoliosPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:34.053473" level="INFO">Clicking element 'xpath://span[contains(text(),'×')]'.</msg>
+<msg time="2024-06-04T15:31:38.334657" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:31:38.334657" level="FAIL">Element with locator 'xpath://span[contains(text(),'×')]' not found.</msg>
+<arg>xpath://span[contains(text(),'×')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:31:34.053473" elapsed="4.281184">Element with locator 'xpath://span[contains(text(),'×')]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-04T15:31:34.053473" elapsed="4.281184">Element with locator 'xpath://span[contains(text(),'×')]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-04T15:31:34.053473" elapsed="4.281184">Element with locator 'xpath://span[contains(text(),'×')]' not found.</status>
+</branch>
+<status status="FAIL" start="2024-06-04T15:31:20.697458" elapsed="17.637199">Element with locator 'xpath://span[contains(text(),'×')]' not found.</status>
+</try>
+<doc>TC-4 Test if user can create portfolio</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:31:20.697458" elapsed="17.637199">Element with locator 'xpath://span[contains(text(),'×')]' not found.</status>
+</test>
+<test id="s1-s1-s1-t5" name="Verify filters to search portfolios" line="52">
+<kw name="Click on filters" owner="PortfoliosPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:38.341921" level="INFO">Clicking element '//input[@placeholder='Search By Portfolio']'.</msg>
+<msg time="2024-06-04T15:31:49.534873" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:31:49.534873" level="FAIL">Element with locator '//input[@placeholder='Search By Portfolio']' not found.</msg>
+<arg>${SearhPortfoliofilters}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:31:38.334657" elapsed="11.421513">Element with locator '//input[@placeholder='Search By Portfolio']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:49.764172" elapsed="0.087967"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SearhPortfoliofilters}</arg>
+<arg>${filters}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:50.010405" elapsed="0.005220"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${FilterClearBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:50.015625" elapsed="0.008498"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:50.024123" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SearhPortfoliofilters}</arg>
+<arg>${filters}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:50.548179" elapsed="0.065012"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:50.613191" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${FilterApplyBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:50.629352" elapsed="0.008083"/>
+</kw>
+<var name="${filters}"/>
+<status status="NOT RUN" start="2024-06-04T15:31:49.964900" elapsed="0.672535"/>
+</iter>
+<var>${filters}</var>
+<value>@{PortfolioFilter}</value>
+<status status="NOT RUN" start="2024-06-04T15:31:49.915141" elapsed="0.722294"/>
+</for>
+<status status="FAIL" start="2024-06-04T15:31:38.334657" elapsed="12.310900">Element with locator '//input[@placeholder='Search By Portfolio']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:50.645557" elapsed="0.008534"/>
+</kw>
+<doc>TC-5 Test to verify filters to search portfolios</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:31:38.334657" elapsed="12.335021">Element with locator '//input[@placeholder='Search By Portfolio']' not found.</status>
+</test>
+<test id="s1-s1-s1-t6" name="Verify preset filters in portfolio page" line="58">
+<kw name="Click on All Portfolios Preset filters" owner="PortfoliosPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:31:50.861226" level="INFO">Clicking element '//span[contains(text(),'All portfolios')]'.</msg>
+<msg time="2024-06-04T15:31:55.170665" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:31:55.170665" level="FAIL">Element with locator '//span[contains(text(),'All portfolios')]' not found.</msg>
+<arg>//span[contains(text(),'All portfolios')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:31:50.861226" elapsed="4.312632">Element with locator '//span[contains(text(),'All portfolios')]' not found.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${Subtitle}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:55.173858" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-04T15:31:50.861226" elapsed="4.312632">Element with locator '//span[contains(text(),'All portfolios')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T15:31:55.173858" elapsed="0.000000"/>
+</kw>
+<kw name="Click on Owned By Me Portfolio Preset filters" owner="PortfoliosPage">
+<status status="NOT RUN" start="2024-06-04T15:31:55.173858" elapsed="0.000000"/>
+</kw>
+<doc>TC-6 Test to verify preset filters in portfolio page</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:31:50.861226" elapsed="4.312632">Element with locator '//span[contains(text(),'All portfolios')]' not found.</status>
+</test>
+<status status="FAIL" start="2024-06-04T15:29:53.051646" elapsed="122.122212"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:29:53.031661" elapsed="122.142197"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:29:52.987450" elapsed="122.186408"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="6" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="TestSuites">TestSuites</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1" name="TS18 Portfolio">TestSuites.TS18 Portfolio</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1-s1" name="TC18 PORTFOLIOS">TestSuites.TS18 Portfolio.TC18 PORTFOLIOS</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

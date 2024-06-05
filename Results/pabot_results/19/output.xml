@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T15:36:12.148866" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuites" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites">
+<suite id="s1-s1" name="TS15 Cases" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS15_Cases">
+<suite id="s1-s1-s1" name="TC15.1 ManualCases" source="C:\Users\Komal Kumari\PycharmProjects\CrediwatchAPP\TestSuites\TS15_Cases\TC15.1_ManualCases.robot">
+<test id="s1-s1-s1-t1" name="Verify Export button" line="11">
+<kw name="Open Browser and Login" owner="GenralKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:36:13.119879" level="INFO">Opening browser 'Chrome' to base url 'https://www.crediwatch.net/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-04T15:36:13.119879" elapsed="49.857236"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-04T15:37:02.977115" elapsed="4.854663"/>
+</kw>
+<kw name="Click Login Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:07.916876" level="INFO">Clicking button '//button[contains(text(),'Login')]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:07.844912" elapsed="10.607259"/>
+</kw>
+<doc>Clicks on the login button</doc>
+<status status="PASS" start="2024-06-04T15:37:07.840660" elapsed="10.611511"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:37:20.459709" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:37:18.452171" elapsed="2.007538"/>
+</kw>
+<kw name="SignIn to the Application" owner="GenralKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:20.459709" level="INFO">Typing text 'credibot@ktkbank.com' into text field '(//input[@id='signInFormUsername'])[2]'.</msg>
+<arg>(//input[@id='signInFormUsername'])[2]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:20.459709" elapsed="0.774208"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:21.240100" level="INFO">Typing text 'Credi!123' into text field '(//input[@id='signInFormPassword'])[2]'.</msg>
+<arg>(//input[@id='signInFormPassword'])[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:21.239000" elapsed="0.522684"/>
+</kw>
+<arg>credibot@ktkbank.com</arg>
+<arg>Credi!123</arg>
+<doc>Signs in using provided username and password</doc>
+<status status="PASS" start="2024-06-04T15:37:20.459709" elapsed="1.301975"/>
+</kw>
+<kw name="Click Signin Button" owner="GenralKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:21.763231" level="INFO">Clicking button '(//input[@name='signInSubmitButton'])[2]'.</msg>
+<arg>${Signin_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:21.761684" elapsed="1.692797"/>
+</kw>
+<doc>Clicks on the signin button</doc>
+<status status="PASS" start="2024-06-04T15:37:21.761684" elapsed="1.692797"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>4S</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-04T15:37:23.454481" elapsed="0.002529"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:36:13.114811" elapsed="70.342199"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:37:28.457336" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:37:23.457010" elapsed="5.000326"/>
+</kw>
+<kw name="Click on Cases on LHS in features list of dashboard" owner="CasesPage">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:28.457336" level="INFO">Clicking link '//a[text()='Cases']'.</msg>
+<arg>${Cases}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:28.457336" elapsed="0.213467"/>
+</kw>
+<doc>Click on Cases on LHS in features list of dashboard</doc>
+<status status="PASS" start="2024-06-04T15:37:28.457336" elapsed="0.213467"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:37:33.674047" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:37:28.670803" elapsed="5.004835"/>
+</kw>
+<kw name="Click on Export button" owner="CasesPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:33.687871" level="INFO">Clicking element '//span[text()='Export']'.</msg>
+<arg>//span[text()='Export']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:33.683310" elapsed="8.819136"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:37:33.675638" elapsed="8.826808"/>
+</kw>
+<doc>TC-1 Test Export feature</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:36:13.103688" elapsed="89.398758"/>
+</test>
+<test id="s1-s1-s1-t2" name="Verify if user can cancele creating Manual Cases" line="20">
+<kw name="Click on Case cration button" owner="CasesPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:42.546464" level="INFO">Clicking button '//button[text()='CREATE CASE']'.</msg>
+<arg>${creatcasebtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:42.503971" elapsed="0.566325"/>
+</kw>
+<doc>Click on Case cration button to create manual case</doc>
+<status status="PASS" start="2024-06-04T15:37:42.503971" elapsed="0.566325"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:37:48.071098" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:37:43.070296" elapsed="5.000802"/>
+</kw>
+<kw name="Click on Search for party to create a case" owner="CasesPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:48.072244" level="INFO">Clicking element '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:48.072244" elapsed="0.171990"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:48.244234" level="INFO">Typing text 'Infosys' into text field '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<arg>${PartyName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:48.244234" elapsed="0.158280"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:37:52.407722" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:37:48.406925" elapsed="4.000797"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:52.407722" level="INFO">Clicking element 'xpath://li[@id='react-autowhatever-1--item-0']'.</msg>
+<arg>xpath://li[@id='react-autowhatever-1--item-0']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:52.407722" elapsed="0.177511"/>
+</kw>
+<doc>Search for party for which the case has to be crated</doc>
+<status status="PASS" start="2024-06-04T15:37:48.072244" elapsed="4.512989"/>
+</kw>
+<kw name="Click on Select Case Type" owner="CasesPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:52.585233" level="INFO">Clicking element '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]'.</msg>
+<arg>${CaseType}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:52.585233" elapsed="0.126038"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:37:57.711872" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:37:52.711271" elapsed="5.000601"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:57.711872" level="INFO">Clicking element '//div[@class=' css-26l3qy-menu']//*[@class=' css-yt9ioa-option']'.</msg>
+<arg>${CaseTypeList}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:57.711872" elapsed="0.152264"/>
+</kw>
+<doc>Click on Select Case Type</doc>
+<status status="PASS" start="2024-06-04T15:37:52.585233" elapsed="5.278903"/>
+</kw>
+<kw name="Enter Case Summary" owner="CasesPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:37:57.864136" level="INFO">Typing text 'Automation Case Summary' into text field '//input[@name='Case Summary']'.</msg>
+<arg>${CaseSummry}</arg>
+<arg>Automation Case Summary</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:37:57.864136" elapsed="0.429362"/>
+</kw>
+<doc>Enter Case Summary</doc>
+<status status="PASS" start="2024-06-04T15:37:57.864136" elapsed="0.430189"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:38:03.295512" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:37:58.294629" elapsed="5.000883"/>
+</kw>
+<kw name="Enter Case Description" owner="CasesPage">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:38:08.299005" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:38:03.296589" elapsed="5.002416"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:08.299005" level="INFO">Typing text 'Automation Case Description Testing' into text field '//body[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[6]/div[2]/div[1]/p[1]'.</msg>
+<arg>${CaseDesp}</arg>
+<arg>Automation Case Description Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:08.299005" elapsed="0.637699"/>
+</kw>
+<doc>Enter Case Description</doc>
+<status status="PASS" start="2024-06-04T15:38:03.296589" elapsed="5.640115"/>
+</kw>
+<kw name="Click on Cancel button" owner="CasesPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:08.936704" level="INFO">Clicking button '//button[contains(text(),'Close')]'.</msg>
+<arg>${CancelBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:08.936704" elapsed="0.120393"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:08.936704" elapsed="0.120393"/>
+</kw>
+<doc>TC-2 Test if user can cancele creating Manual Cases</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:37:42.503971" elapsed="26.553126"/>
+</test>
+<test id="s1-s1-s1-t3" name="Verify if user can create Manual Cases" line="32">
+<kw name="Click on Case cration button" owner="CasesPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:09.060109" level="INFO">Clicking button '//button[text()='CREATE CASE']'.</msg>
+<arg>${creatcasebtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:09.060109" elapsed="0.160323"/>
+</kw>
+<doc>Click on Case cration button to create manual case</doc>
+<status status="PASS" start="2024-06-04T15:38:09.060109" elapsed="0.160323"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:38:14.222221" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:38:09.221812" elapsed="5.000409"/>
+</kw>
+<kw name="Click on Search for party to create a case" owner="CasesPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:14.222221" level="INFO">Clicking element '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:14.222221" elapsed="0.143719"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:14.369767" level="INFO">Typing text 'Infosys' into text field '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]'.</msg>
+<arg>${SearchParty}</arg>
+<arg>${PartyName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:14.365940" elapsed="0.169366"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:38:18.535809" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:38:14.535306" elapsed="4.000503"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:18.536940" level="INFO">Clicking element 'xpath://li[@id='react-autowhatever-1--item-0']'.</msg>
+<arg>xpath://li[@id='react-autowhatever-1--item-0']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:18.535809" elapsed="0.142604"/>
+</kw>
+<doc>Search for party for which the case has to be crated</doc>
+<status status="PASS" start="2024-06-04T15:38:14.222221" elapsed="4.456192"/>
+</kw>
+<kw name="Click on Select Case Type" owner="CasesPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:18.678413" level="INFO">Clicking element '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]'.</msg>
+<arg>${CaseType}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:18.678413" elapsed="0.086035"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:38:23.768344" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:38:18.764448" elapsed="5.003896"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:23.768344" level="INFO">Clicking element '//div[@class=' css-26l3qy-menu']//*[@class=' css-yt9ioa-option']'.</msg>
+<arg>${CaseTypeList}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:23.768344" elapsed="0.134131"/>
+</kw>
+<doc>Click on Select Case Type</doc>
+<status status="PASS" start="2024-06-04T15:38:18.678413" elapsed="5.224062"/>
+</kw>
+<kw name="Enter Case Summary" owner="CasesPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:23.902475" level="INFO">Typing text 'Automation Case Summary' into text field '//input[@name='Case Summary']'.</msg>
+<arg>${CaseSummry}</arg>
+<arg>Automation Case Summary</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:23.902475" elapsed="0.355382"/>
+</kw>
+<doc>Enter Case Summary</doc>
+<status status="PASS" start="2024-06-04T15:38:23.902475" elapsed="0.355382"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:38:29.258132" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:38:24.257857" elapsed="5.000275"/>
+</kw>
+<kw name="Enter Case Description" owner="CasesPage">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:38:34.260892" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:38:29.258132" elapsed="5.002760"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:34.260892" level="INFO">Typing text 'Automation Case Description Testing' into text field '//body[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[6]/div[2]/div[1]/p[1]'.</msg>
+<arg>${CaseDesp}</arg>
+<arg>Automation Case Description Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:34.260892" elapsed="0.575366"/>
+</kw>
+<doc>Enter Case Description</doc>
+<status status="PASS" start="2024-06-04T15:38:29.258132" elapsed="5.578126"/>
+</kw>
+<kw name="Click on create button" owner="CasesPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:34.836258" level="INFO">Clicking button '//button[contains(text(),'Create')]'.</msg>
+<arg>${CreateBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:34.836258" elapsed="0.117080"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:34.836258" elapsed="0.117080"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:38:39.962277" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:38:34.953338" elapsed="5.008939"/>
+</kw>
+<doc>TC- 3 Test if user can create Manual Cases</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:38:09.057097" elapsed="30.905180"/>
+</test>
+<test id="s1-s1-s1-t4" name="Verify if user can cancel case edit" line="45">
+<kw name="Click on case id and navigate to case" owner="CasesPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:39.966999" level="INFO">Clicking element '//div[@class='widget-heading']'.</msg>
+<arg>${CaseID}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:39.966999" elapsed="0.239275"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:39.966999" elapsed="0.239275"/>
+</kw>
+<kw name="Click on edit button" owner="CasesPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:40.206274" level="INFO">Clicking button '//button[text()='Edit']'.</msg>
+<arg>${EditCase}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:40.206274" elapsed="0.664011"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:40.206274" elapsed="0.665560"/>
+</kw>
+<kw name="Clear old case description" owner="CasesPage">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${EditedDescrp}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:40.871834" elapsed="0.065770"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:40.871834" elapsed="0.065770"/>
+</kw>
+<kw name="Enter new case description" owner="CasesPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:40.943153" level="INFO">Typing text 'Edited Automation Case Description Testing' into text field '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]'.</msg>
+<arg>${EditedDescrp}</arg>
+<arg>Edited Automation Case Description Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:40.942643" elapsed="0.575828"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:40.937604" elapsed="0.580867"/>
+</kw>
+<kw name="Click on Edit Cancel button" owner="CasesPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:41.523985" level="INFO">Clicking button '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]'.</msg>
+<arg>//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:41.518471" elapsed="0.201151"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:41.518471" elapsed="0.201151"/>
+</kw>
+<doc>TC-4 Test if user can cancel case edit</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:38:39.962277" elapsed="1.757345"/>
+</test>
+<test id="s1-s1-s1-t5" name="Verify if user can edit case" line="54">
+<kw name="Click on edit button" owner="CasesPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:41.719622" level="INFO">Clicking button '//button[text()='Edit']'.</msg>
+<arg>${EditCase}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:41.719622" elapsed="0.131855"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:41.719622" elapsed="0.131855"/>
+</kw>
+<kw name="Clear old case description" owner="CasesPage">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${EditedDescrp}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:41.851477" elapsed="0.078139"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:41.851477" elapsed="0.078139"/>
+</kw>
+<kw name="Enter new case description" owner="CasesPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:41.933304" level="INFO">Typing text 'Edited Automation Case Description Testing' into text field '//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]'.</msg>
+<arg>${EditedDescrp}</arg>
+<arg>Edited Automation Case Description Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:41.929616" elapsed="0.783433"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:41.929616" elapsed="0.783433"/>
+</kw>
+<kw name="Click on Update button" owner="CasesPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:42.713049" level="INFO">Clicking button '//button[contains(text(),'Update')]'.</msg>
+<arg>//button[contains(text(),'Update')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:42.713049" elapsed="0.123254"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:42.713049" elapsed="0.123254"/>
+</kw>
+<doc>TC-5 Test if user can edit case</doc>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-06-04T15:38:41.719622" elapsed="1.116681"/>
+</test>
+<test id="s1-s1-s1-t6" name="Verify if user can post the comment" line="68">
+<kw name="Click on Add a comment" owner="CasesPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Comment}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-04T15:38:42.836303" elapsed="0.044072"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:42.882359" level="INFO">Typing text 'Automation comment testing' into text field '//textarea[@placeholder='Add a Comment']'.</msg>
+<arg>${Comment}</arg>
+<arg>Automation comment testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T15:38:42.881204" elapsed="0.302933"/>
+</kw>
+<status status="PASS" start="2024-06-04T15:38:42.836303" elapsed="0.347834"/>
+</kw>
+<kw name="Click on Comment Post button" owner="CasesPage">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T15:38:48.184599" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T15:38:43.184137" elapsed="5.000462"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T15:38:48.184599" level="INFO">Clicking button '//button[contains(text(),'Post')]'.</msg>
+<msg time="2024-06-04T15:38:56.479274" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-04T15:38:56.486706" level="FAIL">Button with locator '//button[contains(text(),'Post')]' not found.</msg>
+<arg>${CommentPost}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-04T15:38:48.184599" elapsed="8.305180">Button with locator '//button[contains(text(),'Post')]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-04T15:38:43.184137" elapsed="13.305642">Button with locator '//button[contains(text(),'Post')]' not found.</status>
+</kw>
+<doc>TC-7 Test if user can post the comment</doc>
+<tag>Sanity</tag>
+<status status="FAIL" start="2024-06-04T15:38:42.836303" elapsed="13.653476">Button with locator '//button[contains(text(),'Post')]' not found.</status>
+</test>
+<status status="FAIL" start="2024-06-04T15:36:12.241457" elapsed="164.248322"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:36:12.241457" elapsed="164.248322"/>
+</suite>
+<status status="FAIL" start="2024-06-04T15:36:12.207854" elapsed="164.281925"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="5" fail="1" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="5" fail="1" skip="0" id="s1" name="TestSuites">TestSuites</stat>
+<stat pass="5" fail="1" skip="0" id="s1-s1" name="TS15 Cases">TestSuites.TS15 Cases</stat>
+<stat pass="5" fail="1" skip="0" id="s1-s1-s1" name="TC15.1 ManualCases">TestSuites.TS15 Cases.TC15.1 ManualCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

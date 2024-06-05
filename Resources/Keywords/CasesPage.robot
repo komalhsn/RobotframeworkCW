@@ -21,7 +21,10 @@ ${PARTIES_CSVFile}    Datafiles/parties.csv
 ${CancelBtn}    //button[contains(text(),'Close')]
 ${EditCase}     //button[text()='Edit']
 ${EditedDescrp}     //body/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]
-
+${CaseID}       //div[@class='widget-heading']
+${Comment}      //textarea[@placeholder='Add a Comment']
+${CommentCancel}    //button[contains(text(),'Cancel')]
+${CommentPost}      //button[contains(text(),'Post')]
 *** Keywords ***
 Click on Cases
     [Documentation]    Click on Cases
@@ -80,3 +83,24 @@ Clear old case description
 
 Enter new case description
     input text    ${EditedDescrp}   Edited Automation Case Description Testing
+
+Click on Update button
+    click button    //button[contains(text(),'Update')]
+
+Click on Edit Cancel button
+    click button    //body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]
+
+Click on case id and navigate to case
+    click element    ${CaseID}
+
+Click on Add a comment
+    wait until element is visible    ${Comment}
+    input text    ${Comment}      Automation comment testing
+
+Click on comment cancel button
+    sleep    3s
+    click button    ${CommentCancel}
+
+Click on Comment Post button
+    sleep    5s
+    click button    ${CommentPost}
